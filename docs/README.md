@@ -37,39 +37,43 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 ## 1. Introdução
 
-_Apresente uma frase introdutória definindo o que será apresentado._
+O projeto "WorkoutWiz" que apresentamos é uma aplicação inovadora focada no gerenciamento de academia, com o propósito central de oferecer aos indivíduos interessados em treinamento uma abordagem de rotina personalizada e eficaz, visando alcançar seus objetivos de saúde e boa forma.
 
 ### 1.1 Contextualização
 
-_Na **contextualização**, o aluno deve dizer do que se trata o trabalho, em que área ou contexto se insere.
-A **contextualização** deve ser desenvolvida de algo mais genérico para algo mais específico. 
-A citação de pesquisas quantitativas é bem aceita aqui (corretamente referenciadas)._
+Em um mundo onde a busca por um estilo de vida saudável é uma prioridade crescente,as academias desempenham um papel fundamental. Contudo, a abordagem tradicional muitas vezes não é suficientemente individualizada para satisfazer as necessidades individuais de cada um. Várias matérias publicadas pela ACSM's Alliance of Health and Fitness mostram que personalizar programas de exercícios e orientações nutricionais pode levar a resultados mais significativos e duradouros além de contribuir para sua saúde.
+Além disso, a falta de personalização nos programas de treinamento pode reduzir o engajamento e dificultar o alcance dos objetivos de longo prazo. Daí surge a necessidade de soluções inovadoras como a nossa aplicação “WorkoutWiz”, que pretende preencher esta lacuna, proporcionando uma experiência personalizada para cada utilizador e indo ao encontro das expectativas atuais para uma jornada de treino eficiente e gratificante.
 
 ### 1.2 Problema
 
-_Em seguida o aluno deve caminhar a contextualização para descrever o **problema** que o trabalho trata. 
-O **problema** pode ser algo vivido em uma empresa específica. Neste caso, o aluno deve rapidamente apresentar 
-o cenário de problema da empresa. A empresa só deve ser citada explicitamente se o aluno tiver autorização 
-para tal._
+No cenário das academias contemporâneas, temos uma dificuldade de fornecer programas de exercícios e orientações nutricionais altamente customizadas para cada integrante com base em seus objetivos, limitações e níveis de condicionamento físico. As abordagens gerais muitas vezes levam à falta de motivação, à estagnação e até à desistência. Essa falta de customização pode ser percebida em academias de todos os portes, reduzindo a eficácia das rotinas de treinamento.
+Além disso, outro desafio para as academias é a dificuldade de manter os associados engajados ao longo do tempo. As rotinas de exercícios muitas vezes tornam-se monótonas e previsíveis, levando à desmotivação e ao tédio. Sem um ambiente estimulante e desafiador, os membros podem perder o entusiasmo e se afastar das atividades físicas.
 
 ### 1.3 Objetivo geral
 
-_O aluno deve escrever um pequeno parágrafo ou frase com o **objetivo geral** do trabalho. 
-O objetivo deve ser bem direto, específico e definido com verbos de ação (elaborar, propor, avaliar, comparar, etc.). No caso específico deste projeto, o objetivo deste trabalho é desenvolver um sistema para automação de processos para um problema específico._
+O objetivo deste projeto é desenvolver uma aplicação de gestão de academia que busque resolver o problema da falta de personalização, proporcionando aos clientes um programa de treino e orientação nutricional adaptado às suas necessidades individuais. Pretendemos revolucionar a experiência na academia, promovendo resultados mais eficazes e satisfação a longo prazo.
 
 #### 1.3.1 Objetivos específicos
 
-_Apresente também alguns (pelo menos 2) **objetivos específicos** dependendo de onde você vai querer 
-concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho._
+1. Desenvolver um algoritmo para avaliar as informações individuais dos usuários, considerando fatores como histórico médico, preferências alimentares e níveis de aptidão física, a fim de recomendar planos de treinamento personalizados que maximizem os resultados.
+
+2. Criar uma plataforma intuitiva que permita aos usuários definirem suas metas, restrições e preferências, resultando em programas de exercícios e orientações nutricionais altamente customizados.
+
+3. Desenvolver recursos de acompanhamento como status de progresso para permitir que os usuários observem seu crescimento ao longo do tempo, reforçando a motivação e a sensação de realização.
 
 ### 1.4 Justificativas
 
-_Mostre também as **justificativas** para o 
-desenvolvimento do seu trabalho e, caso deseje, destaque alguma contribuição do trabalho._
+Este projeto é movido pela necessidade de superar as limitações dos métodos tradicionais das academias. A aplicação proposta não só resolve o problema comum dos clientes regulares, mas também fornece uma solução inovadora para melhorar a eficiência do treinamento e a motivação do usuário. Ao dar a cada membro acesso a um plano pessoal, o aplicativo pode aumentar muito o sucesso individual em busca do corpo ideal e de uma boa saúde. Em um mercado saturado onde as opções de treino variam, ser capaz de oferecer uma experiência única e atraente pode ser fundamental para atrair e reter membros. Além disso, estaremos contribuindo para o desenvolvimento da indústria do fitness ao adotar uma abordagem mais eficiente e fácil de usar, estimulando assim novas pessoas a aderirem ao estilo de vida saudável.
 
 ## 2. Participantes do processo
 
-_Apresente aqui os perfis dos usuários chave do sistema. Diversas são as informações que podem ser relevantes para a definição dos perfis dos usuários, tais como idade, gênero, aspectos culturais, nível de educação, entre outros. A pesquisa de mercado pode ser uma ferramenta poderosa para se identificar e caracterizar os perfis de usuários. Apresente claramente o papel a ser desempenhado por cada usuário._
+Participantes do processo:
+
+Cliente: Indivíduos interessados ​​em fitness e saúde que desejam uma abordagem personalizada para atingir seus objetivos. Eles variam em idade, sexo e condicionamento físico, desde iniciantes até atletas experientes. Cada usuário final possui um perfil pessoal que inclui informações como objetivos, preferências alimentares e limitações físicas. 
+
+Treinadores e Nutricionistas: Profissionais de saúde e fitness que atuam como professores e especialistas para usuários finais. Estes profissionais nos darão acesso a informações gerais e detalhadas que contribuirão para o nosso algoritmo criar planos de treinamento personalizados e orientações nutricionais, além de fornecer suporte contínuo e ajustes conforme necessário. 
+
+Academia: A academia é uma parte importante do processo responsável pela gestão geral do sistema “WorkoutWiz”. Funcionários do local irão garantir o bom funcionamento da plataforma no ambiente retratado e fazer a recepção de novos membros que entraram na rotina saudável através da nossa aplicação. Embora não estejam diretamente envolvidos na interação diária com os clientes, são fundamentais para manter a qualidade do serviço e integrar totalmente o sistema com o local de treino.
 
 ## 3. Modelagem do processo de negócio
 

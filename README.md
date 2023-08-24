@@ -1,20 +1,22 @@
-# Nome do projeto
+# Workoutwiz
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+
+ O trabalho propõe o desenvolvimento de um sistema inovador para a gestão de academias, em resposta à crescente interconexão e influência da tecnologia na sociedade contemporânea. Com o advento desse cenário, a abordagem convencional da saúde e do bem-estar está passando por transformações significativas. Diante disso, surge a necessidade de reimaginar a experiência oferecida pelas academias, buscando uma abordagem mais personalizada, eficiente e envolvente para os usuários.O projeto visa atender a essa necessidade, propondo o desenvolvimento de uma aplicação inovadora. O foco principal da aplicação é proporcionar uma gestão revolucionária para academias, com um enfoque exclusivo na satisfação dos usuários. 
+ No âmbito da gestão das academias, a aplicação oferece ferramentas eficazes para otimizar a organização interna. Isso inclui recursos para agendamento de aulas,controle de adesões e comunicação direta com os membros. A interface amigável e intuitiva facilita tanto para os usuários quanto para os administradores das academias.Em resumo, o projeto busca abordar as demandas emergentes no setor de academias, alinhadas com a era digital e tecnológica. Através da criação dessa aplicação inovadora, pretende-se elevar a experiência dos usuários de academias a um novo patamar, oferecendo personalização, eficiência e interatividade. O sistema não apenas beneficia os frequentadores das academias, mas também proporciona uma ferramenta valiosa para os gestores otimizarem seus serviços e operações.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Davi Andrade Rocha Melo de Oliveira
+* João Vitor Pedersoli Rajão 
+* João Vítor Barrel Alves Dutra
+* Pedro Arthur Oliveira Silva
+
 
 ## Professor
 
-* Nome completo do professor 1
-* Nome completo do professor 2
-* Nome completo do professor 3
+* Eveline Alonso Veloso
+* Hugo Bastos de Paula
+* Juliana Amaral Baroni de Carvalho
 
 ## Instruções de utilização
 

@@ -1,25 +1,25 @@
-# TITULO DO PROJETO
+# WORKOUTWIZ
 
 
-**Nome completo do Aluno 1, email do aluno 1**
+**Davi Andrade Rocha Melo de Oliveira, 1438646@sga.pucminas.br**
 
-**Nome completo do Aluno 2, email do aluno 2**
+**João Vitor Pedersoli Rajão, 1438572@sga.pucminas.br**
 
-**Nome completo do Aluno 3, email do aluno 3**
+**João Vítor Barrel Alves Dutra, 1439437@sga.pucminas.br**
 
-**Nome completo do Aluno 4, email do aluno 4**
+**Pedro Arthur Oliveira Silva, 1426724@sga.pucminas.br**
 
-**Nome completo do Aluno 5, email do aluno 5**
+
 
 ---
 
 Professores:
 
-** Prof. Nome do Prof 1 **
+** Eveline Alonso Veloso **
 
-** Prof. Nome do Prof 2 **
+** Hugo Bastos de Paula **
 
-** Prof. Nome do Prof 3 **
+** Juliana Amaral Baroni de Carvalho **
 
 ---
 
@@ -29,8 +29,8 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade Cató
 
 ---
 
-_**Resumo**. Escrever aqui o resumo. O resumo deve contextualizar rapidamente o trabalho, descrever seu objetivo e, ao final, 
-mostrar algum resultado relevante do trabalho (até 10 linhas)._
+_**
+No contexto de um mundo altamente conectado e impulsionado pela tecnologia, a proposta do trabalho é desenvolver uma aplicação inovadora para a gestão de academias, visando aprimorar a experiência dos usuários. A aplicação busca personalizar e otimizar a jornada de saúde e bem-estar. Além disso, a ferramenta visa modernizar a administração interna das academias, simplificando agendamentos, controle de equipamentos e comunicação com os membros. O resultado relevante alcançado é a criação de uma plataforma completa que não apenas atende às necessidades dos usuários, mas também efetivamente transforma a maneira como as academias são gerenciadas, unindo tecnologia e bem-estar de forma inovadora e impactante.**.
 
 ---
 
@@ -79,11 +79,36 @@ Academia: A academia é uma parte importante do processo responsável pela gest�
 
 ### 3.1. Análise da situação atual
 
-_Apresente uma descrição textual de como os sistemas atuais resolvem o problema que se propõe a resolver.  Caso sua proposta seja inovadora e não existam processos claramente definidos, **apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente**, mesmo que não se utilize tecnologia computacional._
+Hoje em dia, a maioria das academias oferece programas de exercícios e orientações
+nutricionais baseadas em abordagens gerais. Os treinadores se comunicam diretamente
+com os membros, coletam informações básicas e preparam planos de treinamento padrão.
+A comunicação é limitada e a personalização é mínima. Os membros acompanham o seu
+progresso manualmente, o que leva à falta de motivação e perda de interesse ao longo do
+tempo. As academias lutam para manter os sócios engajados e atender às suas
+expectativas individuais. O nosso sistema resolveria tal situação promovendo uma
+abordagem de rotina personalizada e eficaz, visando objetivos, preferências alimentares e
+limitações físicas de cada usuário.
 
 ### 3.2. Descrição geral da proposta
 
-_Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias._
+“WorkoutWiz” sugere mudar o cenário atual. A aplicação oferece uma plataforma
+abrangente que conecta usuários, dados nutricionais e análise das condições físicas de
+forma inovadora. Os usuários finais têm acesso a uma interface de usuário intuitiva onde
+podem inserir informações detalhadas sobre si mesmos, incluindo objetivos e preferências
+alimentares. Com base nessas informações, algoritmos avaliam os perfis dos usuários e
+criam planos de treinamento personalizados e otimizados para obter melhores resultados.
+Os dados gerados pelo algoritmo se comunicam diretamente com os usuários e fornecem
+orientação contínua e ajustam os planos com base no progresso e nas necessidades
+individuais. Além disso, o programa oferece recursos de rastreamento que permitem aos
+usuários acompanhar visualmente seu progresso ao longo do tempo. Isso aumenta a
+motivação e a sensação de realização, o que melhora o engajamento. A oferta
+“WorkoutWiz” está aprimorada das estratégias e objetivos das academias atuais, visando
+proporcionar uma experiência mais personalizada e envolvente aos seus membros. O
+programa oferece oportunidades significativas de desenvolvimento, maximizando os
+resultados de saúde e condicionamento físico dos usuários. Ao introduzir tecnologias e
+personalização, a nossa aplicação pode transformar a forma como as academias são
+geridas e responder às necessidades individuais dos seus membros, aumentando a sua
+eficiência e competitividade num mercado em constante evolução.
 
 ### 3.3. Modelagem dos processos
 

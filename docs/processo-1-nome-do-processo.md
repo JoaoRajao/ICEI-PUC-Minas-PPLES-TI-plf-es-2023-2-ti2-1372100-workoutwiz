@@ -1,14 +1,17 @@
-### 3.3.1 Processo 1 – NOME DO PROCESSO
+### 3.3.1 Processo 1 – Avaliação Inicial Personalizada
 
-Apresente aqui o nome e as oportunidades de melhoria para o processo 1. 
-Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN.
+
+Este processo envolve  uma avaliação inicial detalhada do usuário, entendendo seus objetivos de treinamento, treinos anteriores e quaisquer limitações físicas. Além disso, são coletadas informações relevantes, como  nível  de condicionamento físico atual, preferências individuais de exercícios e  disponibilidade de tempo. Com base nesta informação, é criado um perfil pessoal para orientar a criação de planos de treino personalizados. Este perfil tem em conta todas estas variáveis, garantindo que os planos de treino são cuidadosamente adaptados às necessidades específicas de cada utilizador, otimizando  o sucesso e a eficácia do programa de treino.
+
 
 ![Exemplo de um Modelo BPMN do PROCESSO 1](images/process.png "Modelo BPMN do Processo 1.")
 
 #### Detalhamento das atividades
 
-Descreva aqui cada uma das propriedades das atividades do processo 1. 
-Devem estar relacionadas com o modelo de processo apresentado anteriormente.
+Atividade 1 - Avaliação Inicial: Realizar uma avaliação inicial do usuário, incluindo objetivos, histórico de treinamento e restrições físicas.
+Atividade 2 - Coleta de Dados: Coletar dados sobre nível de condicionamento, preferências de treino e disponibilidade de tempo.
+Atividade 3 - Perfil Personalizado: Gerar um perfil personalizado que guiará a criação de planos de treinamento específicos.
+
 
 Os tipos de dados a serem utilizados são:
 
@@ -25,31 +28,38 @@ Os tipos de dados a serem utilizados são:
 * **Link** - campo que armazena uma URL
 * **Tabela** - campo formado por uma matriz de valores
 
-**Nome da atividade 1**
+**Avaliação Inicial**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| Objetivos                | Seleção múltipla | Escolher apenas os campos que representam os objetivos 					| default |
+| Histórico de Treinamento | Seleção única | Preencher apenas o campo que representa melhor o histórico de treino 			| default |
+| Restrições Físicas 	   | Seleção única | Preencher apenas o campo que representa as restrições físicas ou se não possui nenhuma | default |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| Cadastrar            | Realiza o proceso de cadastro da avaliação inicial | default |
 
 
-**Nome da atividade 2**
+**Coleta de dados**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Nível de condicionamento | Seleção única     | Escolher apenas o campo que representa o seu nível atual de condicionamento físico | default |
+| Preferências de Treino   | Seleção múltipla  | Escolher os campos que representam as preferências de treino                       | default |
+| Disponibilidade de Tempo | Data e Hora       | Escolher a faixa de horário e dia que possui disponibilidade                       | default |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| Cadastrar            | Realiza o proceso de cadastro dos dados pessoais   | default |
+
+
+**Perfil Personalizado**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Perfil | Link | --- | default |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| Visualizar Perfil    | Redireciona até a página do perfil personalizado   | default |

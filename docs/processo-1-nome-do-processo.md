@@ -62,4 +62,4 @@ Os tipos de dados a serem utilizados são:
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| Visualizar Perfil    | Redireciona até a página do perfil personalizado   | default |
+| Visualizar Perfil    | Redireciona até a página do perfil personalizado   | --- |

@@ -112,17 +112,17 @@ eficiência e competitividade num mercado em constante evolução.
 
 ### 3.3. Modelagem dos processos
 
-[PROCESSO 1 - Nome do Processo](processo-1-nome-do-processo.md "Detalhamento do Processo 1.")
+[PROCESSO 1 - Avaliação Inicial Personalizada](processo-1-nome-do-processo.md "Detalhamento do Processo 1.")
 
-[PROCESSO 2 - Nome do Processo](processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
+[PROCESSO 2 - Criação de Planos de Treino Personalizados](processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
 
-[PROCESSO 3 - Nome do Processo](processo-3-nome-do-processo.md "Detalhamento do Processo 3.")
+[PROCESSO 3 - Acompanhamento do Progresso e Desempenho](processo-3-nome-do-processo.md "Detalhamento do Processo 3.")
 
-[PROCESSO 4 - Nome do Processo](processo-4-nome-do-processo.md "Detalhamento do Processo 4.")
+[PROCESSO 4 - Lembretes e Planejamento de Treinos](processo-4-nome-do-processo.md "Detalhamento do Processo 4.")
 
-[PROCESSO 5 - Nome do Processo](processo-5-nome-do-processo.md "Detalhamento do Processo 5.")
+[PROCESSO 5 - Orientações Nutricionais e Dicas de Dieta](processo-5-nome-do-processo.md "Detalhamento do Processo 5.")
 
-[PROCESSO 6 - Nome do Processo](processo-6-nome-do-processo.md "Detalhamento do Processo 6.")
+[PROCESSO 6 - Motivação e Comunidade](processo-6-nome-do-processo.md "Detalhamento do Processo 6.")
 
 ## 4. Projeto da solução
 

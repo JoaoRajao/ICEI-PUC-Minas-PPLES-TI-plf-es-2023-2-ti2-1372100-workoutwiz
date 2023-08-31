@@ -8,9 +8,9 @@ Este processo envolve  uma avaliação inicial detalhada do usuário, entendendo
 
 #### Detalhamento das atividades
 
-* **Atividade 1** - Avaliação Inicial: Realizar uma avaliação inicial do usuário, incluindo objetivos, histórico de treinamento e restrições físicas.
-* **Atividade 2** - Coleta de Dados: Coletar dados sobre nível de condicionamento, preferências de treino e disponibilidade de tempo.
-* **Atividade 3** - Perfil Personalizado: Gerar um perfil personalizado que guiará a criação de planos de treinamento específicos.
+* **Atividade 1 - Avaliação Inicial**: Realizar uma avaliação inicial do usuário, incluindo objetivos, histórico de treinamento e restrições físicas.
+* **Atividade 2 - Coleta de Dados**: Coletar dados sobre nível de condicionamento, preferências de treino e disponibilidade de tempo.
+* **Atividade 3 - Perfil Personalizado**: Gerar um perfil personalizado que guiará a criação de planos de treinamento específicos.
 
 
 Os tipos de dados a serem utilizados são:

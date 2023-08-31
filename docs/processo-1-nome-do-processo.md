@@ -33,8 +33,8 @@ Os tipos de dados a serem utilizados são:
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | Objetivos                | Seleção múltipla | Escolher apenas os campos que representam os objetivos 					| --- |
-| Histórico de Treinamento | Seleção única | Preencher apenas o campo que representa melhor o histórico de treino 			| --- |
-| Restrições Físicas 	   | Seleção única | Preencher apenas o campo que representa as restrições físicas ou se não possui nenhuma | Nenhuma |
+| Histórico de Treinamento | Seleção única | Escolher apenas o campo que representa melhor o histórico de treino 			| Nenhum |
+| Restrições Físicas 	   | Seleção única | Escolher apenas o campo que representa as restrições físicas ou se não possui nenhuma | Nenhuma |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |

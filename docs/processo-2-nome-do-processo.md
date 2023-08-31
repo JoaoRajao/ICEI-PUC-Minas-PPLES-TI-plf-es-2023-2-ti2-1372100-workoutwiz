@@ -50,7 +50,7 @@ Os tipos de dados a serem utilizados são:
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| Cadastrar Informações| Atualiza as informações do plano de treino | default |
+| Cadastrar Informações| Atualiza as informações do plano de treino | --- |
 
 
 **Estabelecer Progressões**

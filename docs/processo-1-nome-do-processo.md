@@ -32,22 +32,22 @@ Os tipos de dados a serem utilizados são:
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Objetivos                | Seleção múltipla | Escolher apenas os campos que representam os objetivos 					| --- |
-| Histórico de Treinamento | Seleção única | Escolher apenas o campo que representa melhor o histórico de treino 			| Nenhum |
-| Restrições Físicas 	   | Seleção única | Escolher apenas o campo que representa as restrições físicas ou se não possui nenhuma | Nenhuma |
+| Objetivos                | Seleção múltipla | Escolher apenas os campos que representam os objetivos 					| Selecione os seus objetivos  |
+| Histórico de Treinamento | Seleção única | Escolher apenas o campo que representa melhor o histórico de treino 			| Selecione o seu histórico de treino |
+| Restrições Físicas 	   | Seleção única | Escolher apenas o campo que representa as restrições físicas ou se não possui nenhuma | Selecione suas restrições físicas |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| Cadastrar            | Realiza o proceso de cadastro da avaliação inicial | default |
+| Cadastrar            | Realiza o proceso de cadastro da avaliação inicial | --- |
 
 
 **Coleta de dados**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Nível de condicionamento | Seleção única     | Escolher apenas o campo que representa o seu nível atual de condicionamento físico | --- |
-| Preferências de Treino   | Seleção múltipla  | Escolher os campos que representam as preferências de treino                       | --- |
-| Disponibilidade de Tempo | Data e Hora       | Escolher a faixa de horário e dia que possui disponibilidade                       | Data e Hora do dia |
+| Nível de condicionamento | Seleção única     | Escolher apenas o campo que representa o seu nível atual de condicionamento físico | Selecione seu nível de condicionamento |
+| Preferências de Treino   | Seleção múltipla  | Escolher os campos que representam as preferências de treino                       | Selecione suas preferências |
+| Disponibilidade de Tempo | Data e Hora       | Escolher a faixa de horário e dia que possui disponibilidade                       | Escolha sua disponibilidade |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |

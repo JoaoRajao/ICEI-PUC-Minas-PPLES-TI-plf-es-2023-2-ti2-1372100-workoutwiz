@@ -32,9 +32,9 @@ Os tipos de dados a serem utilizados são:
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Objetivos                | Seleção múltipla | Escolher apenas os campos que representam os objetivos 					| default |
-| Histórico de Treinamento | Seleção única | Preencher apenas o campo que representa melhor o histórico de treino 			| default |
-| Restrições Físicas 	   | Seleção única | Preencher apenas o campo que representa as restrições físicas ou se não possui nenhuma | default |
+| Objetivos                | Seleção múltipla | Escolher apenas os campos que representam os objetivos 					| --- |
+| Histórico de Treinamento | Seleção única | Preencher apenas o campo que representa melhor o histórico de treino 			| --- |
+| Restrições Físicas 	   | Seleção única | Preencher apenas o campo que representa as restrições físicas ou se não possui nenhuma | Nenhuma |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
@@ -45,20 +45,20 @@ Os tipos de dados a serem utilizados são:
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Nível de condicionamento | Seleção única     | Escolher apenas o campo que representa o seu nível atual de condicionamento físico | default |
-| Preferências de Treino   | Seleção múltipla  | Escolher os campos que representam as preferências de treino                       | default |
-| Disponibilidade de Tempo | Data e Hora       | Escolher a faixa de horário e dia que possui disponibilidade                       | default |
+| Nível de condicionamento | Seleção única     | Escolher apenas o campo que representa o seu nível atual de condicionamento físico | --- |
+| Preferências de Treino   | Seleção múltipla  | Escolher os campos que representam as preferências de treino                       | --- |
+| Disponibilidade de Tempo | Data e Hora       | Escolher a faixa de horário e dia que possui disponibilidade                       | Data e Hora do dia |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| Cadastrar            | Realiza o proceso de cadastro dos dados pessoais   | default |
+| Cadastrar            | Realiza o proceso de cadastro dos dados pessoais   | --- |
 
 
 **Perfil Personalizado**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Perfil | Link | --- | default |
+| Perfil | Link | --- | --- |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |

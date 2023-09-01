@@ -8,7 +8,9 @@ Descrição: Este processo visa aprimorar a motivação dos usuários por meio d
 #### Detalhamento das atividades
 
   Atividade 1- Incorporar um sistema de recompensas e conquistas para incentivar a consistência nos treinos.
+  
   Atividade 2 - Oferecer recursos de compartilhamento para que os usuários possam mostrar suas realizações a amigos e seguidores.
+  
   Atividade 3 - Criar um fórum ou espaço para a comunidade onde os usuários possam trocar dicas, experiências e motivação.
 
 Os tipos de dados a serem utilizados são:

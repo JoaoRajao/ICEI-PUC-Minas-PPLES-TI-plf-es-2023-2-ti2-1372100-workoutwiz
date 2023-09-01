@@ -1,7 +1,6 @@
 ### 3.3.4 Processo 4 – *Lembretes e Planejamento de Treinos:*
 
-Apresente aqui o nome e as oportunidades de melhoria para o processo 4. 
-Em seguida, apresente o modelo do processo 4, descrito no padrão BPMN.
+Descrição: Este processo visa melhorar a experiência dos usuários ao enviar lembretes de treinos agendados, oferecer opções de planejamento flexíveis e permitir ajustes de horários de acordo com a disponibilidade individual.
 
 ![PROCESSO 4](images/Processo4.png "Modelo BPMN do Processo 4.")
 

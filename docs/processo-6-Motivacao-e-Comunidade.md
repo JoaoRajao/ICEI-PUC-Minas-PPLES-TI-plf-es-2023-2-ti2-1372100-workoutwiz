@@ -1,15 +1,15 @@
-### 3.3.6 Processo 6 – 
+### 3.3.6 Processo 6 – *Motivação e Comunidade:*
 
-Apresente aqui o nome e as oportunidades de melhoria para o processo 6. 
-Em seguida, apresente o modelo do processo 6, descrito no padrão BPMN.
+Descrição: Este processo visa aprimorar a motivação dos usuários por meio de um sistema de recompensas, promover a interação entre os usuários e criar um senso de comunidade através de recursos de compartilhamento e espaços de discussão.
 
 ![PROCESSO 6](images/Processo6.png "Modelo BPMN do Processo 6.")
 
 
 #### Detalhamento das atividades
 
-Descreva aqui cada uma das propriedades das atividades do processo 6. 
-Devem estar relacionadas com o modelo de processo apresentado anteriormente.
+  Atividade 1- Incorporar um sistema de recompensas e conquistas para incentivar a consistência nos treinos.
+  Atividade 2 - Oferecer recursos de compartilhamento para que os usuários possam mostrar suas realizações a amigos e seguidores.
+  Atividade 3 - Criar um fórum ou espaço para a comunidade onde os usuários possam trocar dicas, experiências e motivação.
 
 Os tipos de dados a serem utilizados são:
 

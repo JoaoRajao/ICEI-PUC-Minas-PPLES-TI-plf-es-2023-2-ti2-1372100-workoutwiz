@@ -8,8 +8,11 @@ Em seguida, apresente o modelo do processo 4, descrito no padrão BPMN.
 
 #### Detalhamento das atividades
 
-Descreva aqui cada uma das propriedades das atividades do processo 4. 
-Devem estar relacionadas com o modelo de processo apresentado anteriormente.
+Atividade 1-Enviar notificações para lembrar os usuários sobre os treinos agendados: O aplicativo enviará notificações personalizadas para lembrar os usuários de seus treinos agendados. Essas notificações podem ser configuradas de acordo com as preferências do usuário, seja com antecedência ou no momento do treino.
+
+Atividade 2-Oferecer a opção de criar um cronograma semanal ou mensal de treinamentos: Os usuários podem criar um plano de treinamento personalizado escolhendo exercícios, dias da semana e duração. O aplicativo ajudará a organizar esses planos em um cronograma fácil de seguir.
+
+Atividade 3-Permitir que os usuários ajustem os horários de treino com base em sua disponibilidade: Os usuários têm a flexibilidade de ajustar os horários de treino sempre que necessário. Se a disponibilidade mudar, eles podem reorganizar seus treinos sem problemas.
 
 Os tipos de dados a serem utilizados são:
 
@@ -30,7 +33,7 @@ Os tipos de dados a serem utilizados são:
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
+| [Input mensagem atuvada] | [Seleção única]  |                |                   |
 | ***Exemplo:***  |                  |                |                   |
 | login           | Caixa de Texto   | formato de e-mail |                |
 | senha           | Caixa de Texto   | mínimo de 8 caracteres |           |

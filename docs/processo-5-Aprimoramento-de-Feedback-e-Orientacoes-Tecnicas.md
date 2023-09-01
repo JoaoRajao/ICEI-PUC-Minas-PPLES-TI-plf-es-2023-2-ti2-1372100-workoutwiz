@@ -1,15 +1,18 @@
-### 3.3.5 Processo 5 – NOME DO PROCESSO
+### 3.3.5 Processo 5 – Aprimoramento de Feedback e Orientações Técnicas
 
-Apresente aqui o nome e as oportunidades de melhoria para o processo 5. 
-Em seguida, apresente o modelo do processo 5, descrito no padrão BPMN.
+Descrição: Este processo visa aprimorar a qualidade das orientações técnicas e feedback fornecidos aos usuários durante o treinamento, incorporando vídeos instrucionais, feedback em tempo real e dicas de segurança para melhorar a eficácia dos movimentos e prevenir lesões.
 
 ![PROCESSO 5](images/Processo5.png "Modelo BPMN do Processo 5.")
 
 
 #### Detalhamento das atividades
 
-Descreva aqui cada uma das propriedades das atividades do processo 5. 
-Devem estar relacionadas com o modelo de processo apresentado anteriormente.
+Atividade 1- Incluir vídeos e imagens demonstrando a forma correta de execução de cada exercício.
+
+Atividade 2 - Oferecer feedback instantâneo sobre a postura e técnica durante o treino.
+
+Atividade 3 - Fornecer dicas para melhorar a eficácia dos movimentos e evitar lesões.
+
 
 Os tipos de dados a serem utilizados são:
 

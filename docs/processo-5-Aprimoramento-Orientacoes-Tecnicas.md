@@ -1,4 +1,4 @@
-### 3.3.5 Processo 5 – Aprimoramento de Feedback e Orientações Técnicas
+### 3.3.5 Processo 5 – Aprimoramento de Orientações Técnicas
 
 Descrição: Este processo visa aprimorar a qualidade das orientações técnicas e feedback fornecidos aos usuários durante o treinamento, incorporando vídeos instrucionais, feedback em tempo real e dicas de segurança para melhorar a eficácia dos movimentos e prevenir lesões.
 
@@ -9,9 +9,7 @@ Descrição: Este processo visa aprimorar a qualidade das orientações técnica
 
 Atividade 1- Incluir vídeos e imagens demonstrando a forma correta de execução de cada exercício.
 
-Atividade 2 - Oferecer feedback instantâneo sobre a postura e técnica durante o treino.
-
-Atividade 3 - Fornecer dicas para melhorar a eficácia dos movimentos e evitar lesões.
+Atividade 2 - Fornecer dicas para melhorar a eficácia dos movimentos e evitar lesões.
 
 
 Os tipos de dados a serem utilizados são:

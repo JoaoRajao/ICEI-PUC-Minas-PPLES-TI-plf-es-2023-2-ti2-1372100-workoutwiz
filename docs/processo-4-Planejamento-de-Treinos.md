@@ -1,4 +1,4 @@
-### 3.3.4 Processo 4 – *Lembretes e Planejamento de Treinos:*
+### 3.3.4 Processo 4 – * Planejamento de Treinos:*
 
 Descrição: Este processo visa melhorar a experiência dos usuários ao enviar lembretes de treinos agendados, oferecer opções de planejamento flexíveis e permitir ajustes de horários de acordo com a disponibilidade individual.
 

@@ -1,15 +1,15 @@
-### 3.3.6 Processo 6 – *Motivação e Comunidade:*
+### 3.3.6 Processo 6 – *FeedBack dos profissionais :*
 
-Descrição: Este processo visa aprimorar a motivação dos usuários por meio de um sistema de recompensas, promover a interação entre os usuários e criar um senso de comunidade através de recursos de compartilhamento e espaços de discussão.
+Descrição: Este processo visa aprimorar a motivação dos usuários por meio de um sistema de feedbacks, promover a interação entre os usuários e criar um senso de comunidade através de recursos de compartilhamento e espaços de discussão onde possam deixar uma avaliação de algumas interações que tiveram com os profissionais. 
 
 ![PROCESSO 6](images/Processo6.png "Modelo BPMN do Processo 6.")
 
 
 #### Detalhamento das atividades
 
-  Atividade 1- Incorporar um sistema de recompensas e conquistas para incentivar a consistência nos treinos.
+  Atividade 1- Incorporar um sistema de Feedbacks para avaliar os profissionais .
   
-  Atividade 2 - Oferecer recursos de compartilhamento para que os usuários possam mostrar suas realizações a amigos e seguidores.
+  Atividade 2 - Oferecer recursos de compartilhamento para que os usuários possam mostrar suas experiencias.
   
   Atividade 3 - Criar um fórum ou espaço para a comunidade onde os usuários possam trocar dicas, experiências e motivação.
 

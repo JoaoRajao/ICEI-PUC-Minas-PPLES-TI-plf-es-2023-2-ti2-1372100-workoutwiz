@@ -2,7 +2,7 @@
 
 Descrição: Este processo visa aprimorar a motivação dos usuários por meio de um sistema de feedbacks, promover a interação entre os usuários e criar um senso de comunidade através de recursos de compartilhamento e espaços de discussão onde possam deixar uma avaliação de algumas interações que tiveram com os profissionais. 
 
-![PROCESSO 6](images/Processo6.png "Modelo BPMN do Processo 6.")
+![PROCESSO 6](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1372100-workoutwiz/blob/master/docs/images/WhatsApp%20Image%202023-09-07%20at%2021.46.32.jpeg?raw=true)
 
 
 #### Detalhamento das atividades

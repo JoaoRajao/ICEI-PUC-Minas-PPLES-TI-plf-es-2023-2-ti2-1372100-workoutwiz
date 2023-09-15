@@ -118,11 +118,11 @@ eficiência e competitividade num mercado em constante evolução.
 
 [PROCESSO 3 - Acompanhamento do Progresso e Desempenho](processo-3-Acompanhamento-do-Progresso-e-Desempenho.md "Detalhamento do Processo 3.")
 
-[PROCESSO 4 - Lembretes e Planejamento de Treinos](processo-4-Planejamento-de-Treinos.md "Detalhamento do Processo 4.")
+[PROCESSO 4 - Planejamento de Treinos](processo-4-Planejamento-de-Treinos.md "Detalhamento do Processo 4.")
 
-[PROCESSO 5 - Orientações Nutricionais e Dicas de Dieta](processo-5-Aprimoramento-Orientacoes-Tecnicas.md "Detalhamento do Processo 5.")
+[PROCESSO 5 - Aprimoramento de Orientações Técnicas](processo-5-Aprimoramento-Orientacoes-Tecnicas.md "Detalhamento do Processo 5.")
 
-[PROCESSO 6 - Motivação e Comunidade](processo-6-Feedback.md "Detalhamento do Processo 6.")
+[PROCESSO 6 - FeedBack dos profissionais](processo-6-Feedback.md "Detalhamento do Processo 6.")
 
 ## 4. Projeto da solução
 

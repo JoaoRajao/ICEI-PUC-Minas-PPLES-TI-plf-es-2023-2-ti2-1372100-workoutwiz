@@ -6,7 +6,7 @@ Nessa etapa, os usuários podem registrar os detalhes de suas atividades e os re
 
 
 
-![PROCESSO 3](images/diagrama3.png "Modelo BPMN do Processo 3.")
+![PROCESSO 3](images/diagrama3(2).png "Modelo BPMN do Processo 3.")
 
 #### Detalhamento das atividades
 

@@ -2,7 +2,7 @@
 
 Descrição: Este processo visa melhorar a experiência dos usuários ao enviar lembretes de treinos agendados, oferecer opções de planejamento flexíveis e permitir ajustes de horários de acordo com a disponibilidade individual.
 
-![PROCESSO 4](images/Processo4.png "Modelo BPMN do Processo 4.")
+![PROCESSO 4](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1372100-workoutwiz/blob/master/docs/images/absence-request.png)
 
 
 #### Detalhamento das atividades

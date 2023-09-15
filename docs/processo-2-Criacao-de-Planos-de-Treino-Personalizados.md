@@ -4,7 +4,7 @@
 Este processo utiliza as informações coletadas durante a avaliação inicial  para criar planos de exercícios altamente personalizados. Esses planos são cuidadosamente adaptados aos objetivos individuais do usuário e incluem muitos exercícios que visam diretamente objetivos como crescimento muscular, perda de peso ou resistência. Além disso, aumentos graduais de intensidade e dificuldade são implementados ao longo do tempo para evitar a estagnação e garantir que o treino continue desafiador e eficaz.
 
 
-![PROCESSO 2](images/Processo2.png "Modelo BPMN do Processo 2.")
+![processo2](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1372100-workoutwiz/assets/130581220/201a1660-6806-46f1-8c48-d6abfd88a711)
 
 #### Detalhamento das atividades
 

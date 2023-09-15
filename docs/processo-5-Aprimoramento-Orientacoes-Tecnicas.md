@@ -2,7 +2,7 @@
 
 Descrição: Este processo visa aprimorar a qualidade das orientações técnicas e feedback fornecidos aos usuários durante o treinamento, incorporando vídeos instrucionais, feedback em tempo real e dicas de segurança para melhorar a eficácia dos movimentos e prevenir lesões.
 
-![PROCESSO 5](images/Processo5.png "Modelo BPMN do Processo 5.")
+![processo5](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1372100-workoutwiz/assets/130581220/d3b97fbd-9d2a-4f33-8d20-fff8075524fd)
 
 
 #### Detalhamento das atividades

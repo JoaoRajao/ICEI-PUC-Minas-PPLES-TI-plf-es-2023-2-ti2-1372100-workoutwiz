@@ -1,4 +1,4 @@
-### 3.3.3 Processo 3 – Acompanhamento do Progresso e Desempenho:
+### 3.3.3 Processo 3 – Acompanhamento do Progresso:
 
 
 

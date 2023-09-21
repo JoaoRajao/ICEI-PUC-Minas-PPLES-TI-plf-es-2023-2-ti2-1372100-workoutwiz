@@ -116,7 +116,7 @@ eficiência e competitividade num mercado em constante evolução.
 
 [PROCESSO 2 - Criação de Planos de Treino Personalizados](processo-2-Criacao-de-Planos-de-Treino-Personalizados.md "Detalhamento do Processo 2.")
 
-[PROCESSO 3 - Acompanhamento do Progresso e Desempenho](processo-3-Acompanhamento-do-Progresso-e-Desempenho.md "Detalhamento do Processo 3.")
+[PROCESSO 3 - Acompanhamento do Progresso](processo-3-Acompanhamento-do-Progresso-e-Desempenho.md "Detalhamento do Processo 3.")
 
 [PROCESSO 4 - Planejamento de Treinos](processo-4-Planejamento-de-Treinos.md "Detalhamento do Processo 4.")
 

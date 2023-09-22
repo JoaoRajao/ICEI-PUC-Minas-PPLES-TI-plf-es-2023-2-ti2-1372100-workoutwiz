@@ -28,31 +28,60 @@ Os tipos de dados a serem utilizados são:
 * **Link** - campo que armazena uma URL
 * **Tabela** - campo formado por uma matriz de valores
 
-**Nome da atividade 1**
+**-Enviar notificações**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Input mensagem atuvada] | [Seleção única]  |                |                   |
 | ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+|ativar          | button   |  |                |
+
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 | ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| Ativar notificação              | Atividade 2            | default           |
 
 
-**Nome da atividade 2**
+
+**Criar um cronograma**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Adicionar  cronograma|  button |                |                   |
+| Escolher semanal/mensal |Radio |                |     semanal              |
+| Adicionar exercicios | checkbox  |                |                   |
+| Definir dias/semanas  |Date                  |                |                   |
+| Confirmar |Submit                 |                |                   |
+
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+|  Adicionar  cronograma |                                |   input                |
+|  Escolher semanal/mensal|                                |   input                |
+|  Adicionar exercicios |                                |   input                |
+|  Definir dias/semanas |                                |   input                |
+|  Confirmar |   Atividade    3                         |   input                |
+
+
+**Ajustar horários**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| [Nome do campo] | [tipo de dados]  |                |                   |
+| Editar cronograma|  button |                |                   |
+| Editar data |Date |                |                |
+| Confirmar | submit  |                |                   |
+
+
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
+|    Editar cronograma   |                               |                   |
+|    Editar data                  |                                |                   |
+|     Confirmar                  |       Atividade 1                        |                   |

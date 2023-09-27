@@ -2,7 +2,8 @@
 
 Descrição: Este processo visa aprimorar a qualidade das orientações técnicas e feedback fornecidos aos usuários durante o treinamento, incorporando vídeos instrucionais, feedback em tempo real e dicas de segurança para melhorar a eficácia dos movimentos e prevenir lesões.
 
-![processo5](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1372100-workoutwiz/assets/130581220/d3b97fbd-9d2a-4f33-8d20-fff8075524fd)
+![diagrama5update](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1372100-workoutwiz/assets/130581220/afcc8f69-9af0-4a75-9f8e-bf5234b9f5b0)
+
 
 
 #### Detalhamento das atividades

@@ -32,8 +32,8 @@ Os tipos de dados a serem utilizados são:
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Execuções dos movimentos    | Arquivos de mídia   |[Aceita apenas fotos e vídeos]               |Confira a melhor execução para esse exercício|
-|                 |                  |                |                   |
+| Execuções dos movimentos    | Arquivos de mídia   |Aceita apenas fotos e vídeos               |Confira a melhor execução para esse exercício|
+| Descrição da execução                |Área de texto                  |Aceita apenas texto                |Explicação do movimento                  |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |

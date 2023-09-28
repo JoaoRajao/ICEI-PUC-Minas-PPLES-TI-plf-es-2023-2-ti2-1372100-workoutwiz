@@ -32,7 +32,7 @@ Os tipos de dados a serem utilizados são:
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
+| Exibir mídia | Fotos e vídeos  |                |Veja a execução certa                   |
 |                 |                  |                |                   |
 
 

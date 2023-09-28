@@ -8,9 +8,9 @@ Descrição: Este processo visa aprimorar a qualidade das orientações técnica
 
 #### Detalhamento das atividades
 
-Atividade 1- Incluir vídeos e imagens demonstrando a forma correta de execução de cada exercício.
+**Atividade 1 - Mídias demonstrativas**:  Incluir vídeos e imagens demonstrando a forma correta de execução de cada exercício.
 
-Atividade 2 - Fornecer dicas para melhorar a eficácia dos movimentos e evitar lesões.
+**Atividade 2 - Feedback da execução dos exercícios:** Fornecer dicas para melhorar a eficácia dos movimentos e evitar lesões.
 
 
 Os tipos de dados a serem utilizados são:

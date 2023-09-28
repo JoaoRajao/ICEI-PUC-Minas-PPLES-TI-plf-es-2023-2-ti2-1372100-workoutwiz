@@ -31,7 +31,7 @@ Os tipos de dados a serem utilizados são:
 **Nome da atividade 1**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-|                 |Fotos e vídeos    |                |                   |
+| ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
 |                 |                  |                |                   |
 

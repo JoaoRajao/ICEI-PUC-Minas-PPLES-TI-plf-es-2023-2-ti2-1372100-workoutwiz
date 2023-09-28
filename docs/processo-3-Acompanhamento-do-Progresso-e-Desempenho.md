@@ -11,7 +11,7 @@ Nessa etapa, os usuários podem registrar os detalhes de suas atividades e os re
 #### Detalhamento das atividades
 
 * **Atividade 1 - Registro de Atividades e Resultados**: Permitir que os usuários registrem suas atividades e resultados de cada treino.
-* **Atividade 2 - Análise das Informações**: Armazenar informações como pesos levantados, distâncias percorridas e tempos alcançados.
+* **Atividade 2 - Análise dos Resultados**: Analisar informações como pesos levantados, distâncias percorridas e tempos alcançados.
 * **Atividade 3 - Gráfico e Relatório do Progresso**: Gerar gráficos e relatórios para mostrar visualmente o progresso ao longo do tempo.
 
 

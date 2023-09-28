@@ -28,11 +28,11 @@ Os tipos de dados a serem utilizados são:
 * **Link** - campo que armazena uma URL
 * **Tabela** - campo formado por uma matriz de valores
 
-**Nome da atividade 1**
+**Mídias demonstrativas**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Exibir mídia | Fotos e vídeos  |                |Veja a execução certa                   |
+| [Exibir mídia]    | [Fotos e vídeos]   |                |[Veja a execução certa] |
 |                 |                  |                |                   |
 
 

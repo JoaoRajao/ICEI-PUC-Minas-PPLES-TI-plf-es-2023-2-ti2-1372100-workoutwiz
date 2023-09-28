@@ -32,7 +32,7 @@ Os tipos de dados a serem utilizados são:
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Mídias]    | [Fotos e vídeos]   |[Aceita aepnas fotos e vídeos]               |[Veja a execução certa] |
+| Execuções dos movimentos    | Arquivos de mídia   |[Aceita apenas fotos e vídeos]               |Confira a melhor execução para esse exercício|
 |                 |                  |                |                   |
 
 

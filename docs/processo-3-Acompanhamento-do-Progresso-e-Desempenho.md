@@ -34,8 +34,9 @@ Os tipos de dados a serem utilizados são:
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Registro de Atividades | Área de texto | Mínimo de 20 caracteres | Descreva as suas atividades |
-| Registro de Resultados | Área de texto | Mínimo de 20 caracteres | Descreva os seus resultados |
+| Pesos levantados | Área de texto | Aceita apenas números | Informe os pesos levantados |
+| Distâncias percorridas   | Área de texto | Aceita apenas números | Informe as distâncias percorridas |
+| Tempos alcançados | Área de texto | Aceita apenas números | Informe os tempos alcançados |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
@@ -43,27 +44,28 @@ Os tipos de dados a serem utilizados são:
 | Salvar Registro | Salva os registros feitos pelo usuário e os adiciona ao seu perfil | --- |
 
 
-**Armazenamento de Informações**
-
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| Pesos levantados | Área de texto | Aceita apenas números | Informe os pesos levantados |
-| Distâncias percorridas   | Área de texto | Aceita apenas números | Informe as distâncias percorridas |
-| Tempos alcançados | Área de texto | Aceita apenas números | Informe os tempos alcançados |
-
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| Cadastrar Informações| Atualiza as informações do plano de treino | --- |
-
-
 **Gráfico e Relatório do Progresso**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | Gráfico | Imagem | --- | --- |
-| Relatório | Imagem | --- | --- |
+| Relatório   | Imagem | --- | --- |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| Visualizar Relatório | Exibe os relatórios mostrando o progresso do usuário | --- |
+| Visualizar Progressão | Atualiza as informações da progressão | --- |
+
+
+**Realizar Novo Planejamento**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Selecione os Exercícios que Deseja Melhorar a Progressão | Seleção múltipla | --- | Escolha os exercícios que deseja melhorar a progressão |
+| Disponibilidade de Tempo | Data e Hora | Aceita apenas números | Escolha sua disponibilidade |
+| Preferências de Treino | Seleção múltipla | --- | Escolha os exercícios que deseja fazer para aprimorar sua progressão |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| Cadastrar Novo Plano de Treino | Atualiza o plano de treino | --- |

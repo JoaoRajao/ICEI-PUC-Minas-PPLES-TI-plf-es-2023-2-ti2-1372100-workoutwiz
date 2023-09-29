@@ -41,7 +41,7 @@ Os tipos de dados a serem utilizados são:
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 | ***Exemplo:***       |                                |                   |
-| Ativar notificação              | Atividade 2            | default           |
+| Ativar notificação              | Professor recebe a ficha       | default           |
 
 
 
@@ -51,20 +51,16 @@ Os tipos de dados a serem utilizados são:
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
 | Adicionar  cronograma|  button |                |                   |
-| Escolher semanal/mensal |Radio |                |     semanal              |
-| Adicionar exercicios | checkbox  |                |                   |
-| Definir dias/semanas  |Date                  |                |                   |
-| Confirmar |Submit                 |                |                   |
+| Escolher semanal/mensal |Seleção única |                |     semanal              |
+| Adicionar exercicios | Seleção múltipla  |                |                   |
+| Definir dias/semanas  |Data                  |                |                   |
+
 
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|  Adicionar  cronograma |                                |   input                |
-|  Escolher semanal/mensal|                                |   input                |
-|  Adicionar exercicios |                                |   input                |
-|  Definir dias/semanas |                                |   input                |
-|  Confirmar |   Atividade    3                         |   input                |
+|  Confirmar |   O aluno recebe o cronograma                       |   default                |
 
 
 **Ajustar horários**
@@ -73,8 +69,8 @@ Os tipos de dados a serem utilizados são:
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
 | Editar cronograma|  button |                |                   |
-| Editar data |Date |                |                |
-| Confirmar | submit  |                |                   |
+| Editar data |Data |                |                |
+
 
 
 
@@ -82,6 +78,4 @@ Os tipos de dados a serem utilizados são:
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|    Editar cronograma   |                               |                   |
-|    Editar data                  |                                |                   |
-|     Confirmar                  |       Atividade 1                        |                   |
+|     Confirmar                  |    final do processo                         |     default              |

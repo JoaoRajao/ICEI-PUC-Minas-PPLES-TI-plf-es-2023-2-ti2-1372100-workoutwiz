@@ -32,11 +32,15 @@ Os tipos de dados a serem utilizados são:
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Plano de Treino | Imagem | --- | --- |
+| Frequência| Área de texto | --- | --- |
+| Modalidade de treino personalizada | Área de texto | --- | --- |
+| Gerar plano de Treino | Imagem | --- | --- |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
+| Definir frequência de treino | Informa ao profissional equantos dias por semana o plano se baseará | --- |
+| Escolher modalidade | Informa ao profissional qual modalidade o plano se baseará | --- |
 | Gerar Plano de Treino | Gera o plano de treino personalizado e o exibe em um campo de imagens | --- |
 
 
@@ -45,7 +49,7 @@ Os tipos de dados a serem utilizados são:
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | Ganho de Massa Muscular | Caixa de texto | Aceita apenas números | Informe quanto ganhou de massa muscular |
-| Perda de Peso   | Caixa de texto | Aceita apenas números | Informe quanto perdeu de peso |
+| Controle de Peso   | Caixa de texto | Aceita apenas números | Informe quanto perdeu de peso |
 | Aumento da Resistência | Seleção única | Escolher apenas o campo que representa o aumento da resistência | Selecione o aumento da resistência |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
@@ -57,8 +61,8 @@ Os tipos de dados a serem utilizados são:
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Progressões de Intensidade | Seleção única | Escolher apenas o campo que representa o desejo da progressão de intensidade | Selecione uma progressão de intensidade |
-| Progressões de Dificuldade | Seleção única | Escolher apenas o campo que representa o desejo da progressão de dificuldade | Selecione uma progressão de intensidade |
+| Progressões de Carga | Caixa de texto | -- | Informe as cargas utilizadas durante a semana |
+| Progressões de Dificuldade | Seleção única | Escolher apenas o campo que representa o desejo da progressão de dificuldade | Selecione uma progressão de dificuldade|
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |

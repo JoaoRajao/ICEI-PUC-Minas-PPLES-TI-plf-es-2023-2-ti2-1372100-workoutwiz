@@ -4,7 +4,8 @@
 Este processo envolve  uma avaliação inicial detalhada do usuário, entendendo seus objetivos de treinamento, treinos anteriores e quaisquer limitações físicas. Além disso, são coletadas informações relevantes, como  nível  de condicionamento físico atual, preferências individuais de exercícios e  disponibilidade de tempo. Com base nesta informação, é criado um perfil pessoal para orientar a criação de planos de treino personalizados. Este perfil tem em conta todas estas variáveis, garantindo que os planos de treino são cuidadosamente adaptados às necessidades específicas de cada utilizador, otimizando  o sucesso e a eficácia do programa de treino.
 
 
-https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1372100-workoutwiz/blob/master/docs/images/Diagrama.Processo1.png
+Diagrama.Processo1.png
+
 
 #### Detalhamento das atividades
 

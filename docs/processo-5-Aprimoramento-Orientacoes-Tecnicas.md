@@ -34,24 +34,20 @@ Os tipos de dados a serem utilizados são:
 | ---             | ---              | ---            | ---               |
 | Execuções dos movimentos    | Arquivos de mídia   |Aceita apenas fotos e vídeos               |Confira a melhor execução para esse exercício|
 | Descrição da execução                |Área de texto                  |Aceita apenas texto                |Explicação do movimento                  |
+| Dicas de segurança               |Área de texto                  |Aceita apenas texto                |Algumas dicas para uma execução mais segura                  |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| Apresentar mídias e descrição para cada exercício| Início do processo de orientações  | -- |
 
 
-**Nome da atividade 2**
+**Feedback da execução dos exercícios**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Fornecer feedback | Área de texto  |Aceita apenas texto             |Informe o feedback da execução                 |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| Editar e salvar feedback | Fim do processo de orientações | -- |

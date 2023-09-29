@@ -34,9 +34,9 @@ Os tipos de dados a serem utilizados são:
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
 | ***Exemplo:***  |                  |                |                   |
-| Area de texto          | Área de texto   |  |                |
-| Escolher o publico        | radio button   | |     Profissional      |
-| Enviar        | submit   | |          |
+| Area de texto          | Área de texto   | minimo de 10 caracteres |                |
+| Escolher o publico        | Seleção única   | --|     Profissional      |
+
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
@@ -69,9 +69,8 @@ Os tipos de dados a serem utilizados são:
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
-|    Criar comunidade   |    Button              |                |                   |
-|   Nome       |       Caixa de texto       |                |                   |
-|  Confirmar    |       button       |                |                   |
+|   Nome       |       Caixa de texto       | minimo de 10 caracteres               |        --           |
+
 
 
 
@@ -79,4 +78,5 @@ Os tipos de dados a serem utilizados são:
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|          Confirmar         | Atividade 1                                |                   |
+|    Criar comunidade   |  Continua a atividade             |        default        |                   
+|          Confirmar         | Atividade 1                                |     default              |

@@ -32,9 +32,9 @@ Os tipos de dados a serem utilizados são:
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Input mensagem atuvada] | [Seleção única]  |                |                   |
+| [Input mensagem ativada] | [Seleção única]  |                |                   |
 | ***Exemplo:***  |                  |                |                   |
-|ativar          | button   |  |                |
+
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
@@ -50,10 +50,9 @@ Os tipos de dados a serem utilizados são:
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
-| Adicionar  cronograma|  button |                |                   |
-| Escolher semanal/mensal |Seleção única |                |     semanal              |
-| Adicionar exercicios | Seleção múltipla  |                |                   |
-| Definir dias/semanas  |Data                  |                |                   |
+| Escolher semanal/mensal |Seleção única |      --          |     semanal              |
+| Adicionar exercicios | Seleção múltipla  |         --       |                   |
+| Definir dias/semanas  |Data                  |       --         |                   |
 
 
 
@@ -61,15 +60,14 @@ Os tipos de dados a serem utilizados são:
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 |  Confirmar |   O aluno recebe o cronograma                       |   default                |
-
+| Adicionar  cronograma | Professor   | (default/cancel/  ) |
 
 **Ajustar horários**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
-| Editar cronograma|  button |                |                   |
-| Editar data |Data |                |                |
+| Editar data |Data |                |      somente datas          |default
 
 
 
@@ -78,4 +76,5 @@ Os tipos de dados a serem utilizados são:
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
+| Editar cronograma|  Continua a atividade  |    default            |                   
 |     Confirmar                  |    final do processo                         |     default              |

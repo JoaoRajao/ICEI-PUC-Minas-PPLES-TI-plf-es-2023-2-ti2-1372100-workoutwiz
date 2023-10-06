@@ -30,12 +30,12 @@ _Apresente o modelo de dados por meio de um modelo relacional ou Diagrama de Ent
 
 _Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas. Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário._
 
-| **Dimensão**   | **Tecnologia**  |
-| ---            | ---             |
-| Persistência   | Hibernate       |
-| Front end      | HTML+CSS+JS     |
+| **Dimensão**   | **Tecnologia**  |       Ferramentas que possam ser utilizadas seriam:  Figma- Para criar os wireframes 
+| ---            | ---             |                                                      Miro- Para planejamento de pesquisas e criação de estrategia do projeto
+| Persistência   | Hibernate       |*                                                      GitHub
+| Front end      | HTML+CSS+JS     |                                                      Visual Studio Code
 | Back end       | Java SpringBoot |
-| Log do sistema | Log4J           |
+| Log do sistema | Log4J           |*
 | Teste          | JUnit           |
 | Deploy         | Github Pages    |
 
@@ -45,6 +45,9 @@ _Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou s
 Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
 Explique as guias de estilo utilizadas no seu projeto.
+
+IDENTIDADE VISUAL PADRÃO:
+Nosso projeto terá um padrão de cor vermelho e preto, fonte poppins,iconografia seria objetos de academia como um halter.
 
 ## Design
 

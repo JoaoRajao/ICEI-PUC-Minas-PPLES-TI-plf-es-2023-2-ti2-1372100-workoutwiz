@@ -2,7 +2,7 @@
 
 ### 4.1. Diagrama de classes
 
-![Diagrama de classes](images/classes.gif "Diagrama de classes")
+![Diagrama de classes](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1372100-workoutwiz/blob/master/docs/images/diagrama%20ti2.png)
 
 _Acrescente uma breve descrição sobre o diagrama apresentado. Descreva cada uma de suas classes._
 

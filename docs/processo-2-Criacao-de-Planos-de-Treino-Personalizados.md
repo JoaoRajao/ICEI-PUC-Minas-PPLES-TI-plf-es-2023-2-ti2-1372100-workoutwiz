@@ -34,7 +34,7 @@ Os tipos de dados a serem utilizados são:
 | ---             | ---              | ---            | ---               |
 | Frequência| Área de texto | --- | --- |
 | Modalidade de treino personalizada | Área de texto | --- | --- |
-| Gerar plano de Treino | Imagem | --- | --- |
+| Ficha Semanal | Imagem | --- | --- |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |

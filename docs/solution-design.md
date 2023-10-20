@@ -46,7 +46,7 @@ Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com
 
 Explique as guias de estilo utilizadas no seu projeto.
 
-https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1372100-workoutwiz/blob/25dca6ece66fd0a743cc423e592ee11a3565ccad/docs/images/Guia-de-estilo-TIAP2.png
+![Guia de Estilo]https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1372100-workoutwiz/blob/25dca6ece66fd0a743cc423e592ee11a3565ccad/docs/images/Guia-de-estilo-TIAP2.png
 
 ## Design
 

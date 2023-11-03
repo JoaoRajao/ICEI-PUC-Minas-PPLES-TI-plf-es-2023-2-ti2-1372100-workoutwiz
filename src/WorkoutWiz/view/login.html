@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workoutwiz</title>
+
+  <!-- 
+    - FAVICON
+  -->
+  <link rel="shortcut icon" href="./favicon.png">
+
+  <!-- 
+    - CSS LINK
+  -->
+  <link rel="stylesheet" href="./assets/css/login.css">
+
+<body>
+    <div class="wrapper">
+        <div class="form-container sign-up">
+            <form action="#">
+                <h2>Cadastro</h2>
+                <div class="form-group">
+                    <input type="text" required>
+                    <label for="">usuário</label>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" required>
+                    <label for="">email</label>
+                    <i class="fas fa-at"></i>
+                </div>
+                <div class="form-group">
+                    <input type="password" required>
+                    <label for="">senha</label>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="form-group">
+                    <input type="password" required>
+                    <label for="">confira a senha</label>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <button type="submit" class="btn">cadastrar</button>
+                <div class="link">
+                    <p>Já possui uma conta?<a href="#" class="signin-link"> Login</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="#">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <input type="text" required>
+                    <i class="fas fa-user"></i>
+                    <label for="">usuário</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" required>
+                    <i class="fas fa-lock"></i>
+                    <label for="">senha</label>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="link">
+                    <p>Não possui uma conta?<a href="#" class="signup-link"> Cadastro</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+    <script>
+        let wrapper = document.querySelector('.wrapper'),
+            signUpLink = document.querySelector('.link .signup-link'),
+            signInLink = document.querySelector('.link .signin-link');
+
+        signUpLink.addEventListener('click', () => {
+            wrapper.classList.add('animated-signin');
+            wrapper.classList.remove('animated-signup');
+        });
+
+        signInLink.addEventListener('click', () => {
+            wrapper.classList.add('animated-signup');
+            wrapper.classList.remove('animated-signin');
+        });
+    </script>
+</body>
+
+</html>

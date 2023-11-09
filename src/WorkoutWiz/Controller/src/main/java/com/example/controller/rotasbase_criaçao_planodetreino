@@ -1,0 +1,56 @@
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WorkoutController {
+
+    @PostMapping("/api/criarPlanoDeTreino")
+    public String criarPlanoDeTreino(@RequestBody PlanoTreinoRequest request) {
+        // Lógica para criar o plano de treino com base nos dados da requisição
+        // Chame os serviços adequados ou manipule os dados como necessário
+        return "Plano de treino criado com sucesso!";
+    }
+}
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ExerciseController {
+
+    @PostMapping("/api/incorporarExercicios")
+    public String incorporarExercicios(@RequestBody DadosExercicioRequest request) {
+        // Lógica para incorporar exercícios com base nos dados da requisição
+        // Chame os serviços adequados ou manipule os dados como necessário
+        return "Exercícios incorporados com sucesso!";
+    }
+}
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ProgressionController {
+
+    @PostMapping("/api/estabelecerProgressoes")
+    public String estabelecerProgressoes(@RequestBody DadosProgressaoRequest request) {
+        // Lógica para estabelecer progressões com base nos dados da requisição
+        // Chame os serviços adequados ou manipule os dados como necessário
+        return "Progressões estabelecidas com sucesso!";
+    }
+}
+
+public class PlanoTreinoRequest {
+    // Campos para a criação do plano de treino
+}
+
+public class DadosExercicioRequest {
+    // Campos para a incorporação de exercícios
+}
+
+public class DadosProgressaoRequest {
+    // Campos para estabelecer progressões
+}

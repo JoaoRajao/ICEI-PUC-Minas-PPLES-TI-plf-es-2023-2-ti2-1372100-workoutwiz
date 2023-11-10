@@ -1,8 +1,12 @@
+CREATE DATABASE IF NOT EXISTS workoutwiz;
+USE workoutwiz;
+
+
 CREATE TABLE Academia (
   AcademiaID INT PRIMARY KEY,
   Nome VARCHAR(255),
   Localizacao TEXT,
-  Contato NUMBER
+  Contato INT
 );
 
 CREATE TABLE Treinador (
@@ -24,13 +28,13 @@ CREATE TABLE Nutricionista (
 CREATE TABLE Cliente (
   ClienteID INT PRIMARY KEY,
   Nome VARCHAR(255),
-  Idade NUMBER,
+  Idade INT,
   Sexo TEXT,
   HistoricoDeTreinamento TEXT,
   RestricoesFisicas TEXT,
   NivelDeCondicionamento TEXT,
   PreferenciasDeTreino TEXT,
-  DisponibilidadeDeTempo NUMBER,
+  DisponibilidadeDeTempo INT,
   TreinadorID INT,
   NutricionistaID INT,
   AcademiaID INT,
@@ -56,7 +60,7 @@ CREATE TABLE AvaliacaoInicial (
   RestricoesFisicas TEXT,
   NivelDecondicionamento TEXT,
   PreferenciasdeTreino TEXT,
-  DisponibilidadeDeTempo NUMBER,
+  DisponibilidadeDeTempo INT,
   FOREIGN KEY (ClienteID) REFERENCES Cliente(ClienteID),
   FOREIGN KEY (TreinadorID) REFERENCES Treinador(TreinadorID),
   FOREIGN KEY (NutricionistaID) REFERENCES Nutricionista(NutricionistaID)
@@ -66,7 +70,7 @@ CREATE TABLE PlanodeTreino (
   TreinoID INT PRIMARY KEY,
   ClienteID INT,
   Data DATE,
-  Frequencia NUMBER,
+  Frequencia INT,
   Modalidade TEXT,
   GanhoDeMassaMuscular TEXT,
   ControleDePeso TEXT,
@@ -82,7 +86,7 @@ CREATE TABLE Exercicios (
   ExercicioID INT PRIMARY KEY,
   PlanodeTreinoID INT,
   NomeDoExercicio VARCHAR(255),
-  NumeroDeRepeticoes NUMBER,
+  NumeroDeRepeticoes INT,
   Peso NUMBER,
   FOREIGN KEY (PlanodeTreinoID) REFERENCES PlanodeTreino(TreinoID)
 );
@@ -90,7 +94,7 @@ CREATE TABLE Exercicios (
 CREATE TABLE Progresso (
   ProgressoID INT PRIMARY KEY,
   TreinoID INT,
-  PesosLevantados NUMBER,
+  PesosLevantados INT,
   DistanciasPercorridas NUMBER,
   TemposAlcancados NUMBER,
   Grafico BLOB,
@@ -101,9 +105,9 @@ CREATE TABLE Progresso (
 CREATE TABLE ExecucaodosTreinos (
   ExecucaoID INT PRIMARY KEY,
   TreinoID INT,
-  Semana NUMBER,
+  Semana INT,
   Exercicios TEXT,
-  Dias NUMBER,
+  Dias INT,
   Data DATE,
   FOREIGN KEY (TreinoID) REFERENCES PlanodeTreino(TreinoID)
 );
@@ -124,7 +128,7 @@ CREATE TABLE Feedback (
   TreinadorID INT,
   NutricionistaID INT,
   Publico TEXT,
-  RedeSocial URL,
+  RedeSocial TEXT,
   Nome VARCHAR(255),
   FOREIGN KEY (ClienteID) REFERENCES Cliente(ClienteID),
   FOREIGN KEY (TreinadorID) REFERENCES Treinador(TreinadorID),

@@ -34,12 +34,22 @@ Os tipos de dados a serem utilizados são:
 | ---             | ---              | ---            | ---               |
 | Execuções dos movimentos    | Arquivos de mídia   |---               |Confira a melhor execução para esse exercício|
 | Descrição da execução                |Área de texto                  |Aceita apenas texto                |Explicação do movimento                  |
-| Dicas de segurança               |Área de texto                  |Aceita apenas texto                |Algumas dicas para uma execução mais segura                  |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
 | Apresentar mídias e descrição para cada exercício| Início do processo de orientações  | -- |
+
+**Dicas de Segurança**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Dicas de segurança               |Área de texto                  |---               |Algumas dicas para uma execução mais segura                  |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+| Apresentar dicas para segurnça do usuário em forma de campo de texto| Fim do processo de orientações  | -- |
 
 
 **Feedback da execução dos exercícios**
@@ -50,4 +60,4 @@ Os tipos de dados a serem utilizados são:
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| Editar e salvar feedback | Fim do processo de orientações | -- |
+| Editar e salvar feedback | --- | -- |

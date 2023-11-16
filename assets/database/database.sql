@@ -2,31 +2,8 @@ CREATE DATABASE IF NOT EXISTS workoutwiz;
 USE workoutwiz;
 
 
-CREATE TABLE Academia (
-  AcademiaID INT PRIMARY KEY,
-  Nome VARCHAR(255),
-  Localizacao TEXT,
-  Contato INT
-);
-
-CREATE TABLE Treinador (
-  TreinadorID INT PRIMARY KEY,
-  Nome VARCHAR(255),
-  Especialidade TEXT,
-  AcademiaID INT,
-  FOREIGN KEY (AcademiaID) REFERENCES Academia(AcademiaID)
-);
-
-CREATE TABLE Nutricionista (
-  NutricionistaID INT PRIMARY KEY,
-  Nome VARCHAR(255),
-  Especialidade TEXT,
-  AcademiaID INT,
-  FOREIGN KEY (AcademiaID) REFERENCES Academia(AcademiaID)
-);
-
 CREATE TABLE Cliente (
-  ClienteID INT PRIMARY KEY,
+  ClienteID INT AUTO_INCREMENT PRIMARY KEY,
   Nome VARCHAR(255),
   Idade INT,
   Sexo TEXT,
@@ -35,26 +12,24 @@ CREATE TABLE Cliente (
   NivelDeCondicionamento TEXT,
   PreferenciasDeTreino TEXT,
   DisponibilidadeDeTempo INT,
-  TreinadorID INT,
-  NutricionistaID INT,
-  AcademiaID INT,
-  FOREIGN KEY (TreinadorID) REFERENCES Treinador(TreinadorID),
-  FOREIGN KEY (NutricionistaID) REFERENCES Nutricionista(NutricionistaID),
-  FOREIGN KEY (AcademiaID) REFERENCES Academia(AcademiaID)
+  Senha VARCHAR(255),
+  Email TEXT,
+  TreinadorID INT
 );
 
-CREATE TABLE Objetivos (
-  ObjetivosID INT PRIMARY KEY,
-  ClienteID INT,
-  Descricao TEXT,
-  FOREIGN KEY (ClienteID) REFERENCES Cliente(ClienteID)
+-- Tabela Treinador
+CREATE TABLE Treinador (
+  TreinadorID INT AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(255),
+  Especialidade TEXT,
+  Senha VARCHAR(255)
 );
 
+-- Tabela AvaliacaoInicial
 CREATE TABLE AvaliacaoInicial (
-  AvaliacaoID INT PRIMARY KEY,
+  AvaliacaoID INT AUTO_INCREMENT PRIMARY KEY,
   ClienteID INT,
   TreinadorID INT,
-  NutricionistaID INT,
   Objetivos TEXT,
   HistoricoDeTreinamento TEXT,
   RestricoesFisicas TEXT,
@@ -62,12 +37,12 @@ CREATE TABLE AvaliacaoInicial (
   PreferenciasdeTreino TEXT,
   DisponibilidadeDeTempo INT,
   FOREIGN KEY (ClienteID) REFERENCES Cliente(ClienteID),
-  FOREIGN KEY (TreinadorID) REFERENCES Treinador(TreinadorID),
-  FOREIGN KEY (NutricionistaID) REFERENCES Nutricionista(NutricionistaID)
+  FOREIGN KEY (TreinadorID) REFERENCES Treinador(TreinadorID)
 );
 
+-- Tabela PlanodeTreino
 CREATE TABLE PlanodeTreino (
-  TreinoID INT PRIMARY KEY,
+  TreinoID INT AUTO_INCREMENT PRIMARY KEY,
   ClienteID INT,
   Data DATE,
   Frequencia INT,
@@ -82,38 +57,21 @@ CREATE TABLE PlanodeTreino (
   FOREIGN KEY (TreinadorID) REFERENCES Treinador(TreinadorID)
 );
 
-CREATE TABLE Exercicios (
-  ExercicioID INT PRIMARY KEY,
-  PlanodeTreinoID INT,
-  NomeDoExercicio VARCHAR(255),
-  NumeroDeRepeticoes INT,
-  Peso NUMBER,
-  FOREIGN KEY (PlanodeTreinoID) REFERENCES PlanodeTreino(TreinoID)
-);
-
+-- Tabela Progresso
 CREATE TABLE Progresso (
-  ProgressoID INT PRIMARY KEY,
+  ProgressoID INT AUTO_INCREMENT PRIMARY KEY,
   TreinoID INT,
   PesosLevantados INT,
-  DistanciasPercorridas NUMBER,
-  TemposAlcancados NUMBER,
+  DistanciasPercorridas INT,
+  TemposAlcancados INT,
   Grafico BLOB,
   Relatorio TEXT,
   FOREIGN KEY (TreinoID) REFERENCES PlanodeTreino(TreinoID)
 );
 
-CREATE TABLE ExecucaodosTreinos (
-  ExecucaoID INT PRIMARY KEY,
-  TreinoID INT,
-  Semana INT,
-  Exercicios TEXT,
-  Dias INT,
-  Data DATE,
-  FOREIGN KEY (TreinoID) REFERENCES PlanodeTreino(TreinoID)
-);
-
+-- Tabela Aprimoramento
 CREATE TABLE Aprimoramento (
-  AprimoramentoID INT PRIMARY KEY,
+  AprimoramentoID INT AUTO_INCREMENT PRIMARY KEY,
   TreinoID INT,
   ExecucoesDosMovimentos TEXT,
   DescricaoDaExecucao TEXT,
@@ -122,15 +80,40 @@ CREATE TABLE Aprimoramento (
   FOREIGN KEY (TreinoID) REFERENCES PlanodeTreino(TreinoID)
 );
 
-CREATE TABLE Feedback (
-  FeedbackID INT PRIMARY KEY,
+-- Tabela Objetivos
+CREATE TABLE Objetivos (
+  ObjetivosID INT AUTO_INCREMENT PRIMARY KEY,
   ClienteID INT,
-  TreinadorID INT,
-  NutricionistaID INT,
-  Publico TEXT,
-  RedeSocial TEXT,
+  Descricao TEXT,
+  FOREIGN KEY (ClienteID) REFERENCES Cliente(ClienteID)
+);
+
+-- Tabela Exercicios
+CREATE TABLE Exercicios (
+  ExercicioID INT AUTO_INCREMENT PRIMARY KEY,
+  TreinoID INT,
+  NomeDoExercicio VARCHAR(255),
+  NumeroDeRepeticoes INT,
+  Peso INT,
+  FOREIGN KEY (TreinoID) REFERENCES PlanodeTreino(TreinoID)
+);
+
+-- Tabela PlanejamentoDeTreinos
+CREATE TABLE PlanejamentoDeTreinos (
+  PlanejamentoDeTreinosID INT AUTO_INCREMENT PRIMARY KEY,
+  TreinoID INT,
+  Tempo VARCHAR(255),
+  Data VARCHAR(255),
+  FOREIGN KEY (TreinoID) REFERENCES PlanodeTreino(TreinoID)
+);
+
+-- Tabela Feedback
+CREATE TABLE Feedback (
+  FeedbackID INT AUTO_INCREMENT PRIMARY KEY,
+  ClienteID INT,
   Nome VARCHAR(255),
-  FOREIGN KEY (ClienteID) REFERENCES Cliente(ClienteID),
-  FOREIGN KEY (TreinadorID) REFERENCES Treinador(TreinadorID),
-  FOREIGN KEY (NutricionistaID) REFERENCES Nutricionista(NutricionistaID)
+  Publico TEXT,
+  Texto VARCHAR(255),
+  FOREIGN KEY (ClienteID) REFERENCES Cliente(ClienteID)
+
 );

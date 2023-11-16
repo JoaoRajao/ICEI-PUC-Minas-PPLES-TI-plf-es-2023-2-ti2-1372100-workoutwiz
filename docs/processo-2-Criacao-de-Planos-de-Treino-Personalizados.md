@@ -13,21 +13,6 @@ Este processo utiliza as informações coletadas durante a avaliação inicial  
 * **Atividade 3 - Estabelecer Progressões**: Estabelecer progressões de intensidade e dificuldade ao longo do tempo para evitar estagnação.
 
 
-Os tipos de dados a serem utilizados são:
-
-* **Área de texto** - campo texto de múltiplas linhas
-* **Caixa de texto** - campo texto de uma linha
-* **Número** - campo numérico
-* **Data** - campo do tipo data (dd-mm-aaaa)
-* **Hora** - campo do tipo hora (hh:mm:ss)
-* **Data e Hora** - campo do tipo data e hora (dd-mm-aaaa, hh:mm:ss)
-* **Imagem** - campo contendo uma imagem
-* **Seleção única** - campo com várias opções de valores que são mutuamente exclusivos (tradicional radio button ou combobox)
-* **Seleção múltipla** - campo com várias opções que podem ser selecionadas mutuamente (tradicional checkbox ou listbox)
-* **Arquivo** - campo de upload de documento
-* **Link** - campo que armazena uma URL
-* **Tabela** - campo formado por uma matriz de valores
-
 **Criação de Plano de Treino**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |

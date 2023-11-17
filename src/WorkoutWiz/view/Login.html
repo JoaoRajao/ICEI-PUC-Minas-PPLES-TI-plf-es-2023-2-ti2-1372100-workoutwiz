@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workoutwiz</title>
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="./favicon.png">
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="./assets/css/Login.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="form-container sign-in">
+      <!-- Login Form -->
+      <form action="#">
+        <h2>Login</h2>
+        <div class="form-group">
+          <input id="email" type="email" required>
+          <label for="">email</label>
+          <i class="fas fa-at"></i>
+        </div>
+        <div class="form-group">
+          <input id="password" type="password" required>
+          <i class="fas fa-lock"></i>
+          <label for="">senha</label>
+        </div>
+        <!-- <div class="forgot-pass">
+          <a href="#">esqueceu a senha?</a>
+        </div> -->
+        <button type="submit" class="btn" onclick="window.location.href='AvaliacaoInicial.html'">Login</button>
+        <div class="link">
+          <p>Não possui uma conta?<a href="Cadastro.html" class="signup-link"> Cadastro</a></p> 
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Font Awesome Script -->
+  <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+  <script>
+    let wrapper = document.querySelector('.wrapper'),
+      signUpLink = document.querySelector('.link .signup-link'),
+      signInLink = document.querySelector('.link .signin-link');
+
+    signUpLink.addEventListener('click', () => {
+      wrapper.classList.add('animated-signin');
+      wrapper.classList.remove('animated-signup');
+    });
+
+    signInLink.addEventListener('click', () => {
+      wrapper.classList.add('animated-signup');
+      wrapper.classList.remove('animated-signin');
+    });
+  </script>
+</body>
+
+</html>

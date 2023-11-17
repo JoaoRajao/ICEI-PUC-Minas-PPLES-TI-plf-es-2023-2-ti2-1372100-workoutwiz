@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workoutwiz</title>
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png">
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="./assets/css/Cadastro.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="form-container sign-up">
+      <!-- Signup Form -->
+      <form id="cadastro">
+        <h2>Cadastro</h2>
+        <div class="form-group">
+          <input id="name" type="text" required>
+          <label for="">nome</label>
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="form-group">
+          <input id="email" type="email" required>
+          <label for="">email</label>
+          <i class="fas fa-at"></i>
+        </div>
+        <div class="form-group">
+          <input id="password" type="password" required>
+          <label for="">senha</label>
+          <i class="fas fa-lock"></i>
+        </div>
+        
+        <button type="submit" class="btn">Cadastrar</button>
+        <div class="link">
+          <p>Já possui uma conta?<a href="Login.html" class="signin-link"> Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Font Awesome Script -->
+  <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+  <script>
+    let wrapper = document.querySelector('.wrapper'),
+      signUpLink = document.querySelector('.link .signup-link'),
+      signInLink = document.querySelector('.link .signin-link');
+
+    signUpLink.addEventListener('click', () => {
+      wrapper.classList.add('animated-signin');
+      wrapper.classList.remove('animated-signup');
+    });
+
+    signInLink.addEventListener('click', () => {
+      wrapper.classList.add('animated-signup');
+      wrapper.classList.remove('animated-signin');
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    document.getElementById("cadastro").addEventListener("submit", (e) => {
+      e.preventDefault()
+      
+      let nome = document.getElementById("name").value
+      let email = document.getElementById("email").value
+      let password = document.getElementById("password").value
+
+      let data = {
+        name: nome,
+        email: email,
+        password: password
+      }
+
+      axios.post('http://localhost:8080/signup', data)
+          .then(function (response) {
+              console.log(response.data);
+          })
+          .catch(function (error) {
+              console.error(error);
+          });
+    })
+    
+     
+  </script>
+  
+</body>
+
+</html>

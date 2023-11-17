@@ -1,0 +1,16 @@
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/services/AcompanhamentoService.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/models/PlanejamentoTreinoModel.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/services/SignupService.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/services/FeedBackService.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/routes/PlanejamentoTreinoRoute.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/models/SignupModel.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/services/PlanejamentoTreinoService.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/routes/AcompanhamentoRoute.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/routes/SignupRoute.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/models/FeedBackModel.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/webconfig/WebConfig.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/database/DatabaseManager.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/models/AcompanhamentoModel.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/App.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/utils/HttpResponseUtil.java
+/home/joao/IdeaProjects/workoutwiz-api/src/main/java/com/workoutwiz/api/routes/FeedBackRoute.java

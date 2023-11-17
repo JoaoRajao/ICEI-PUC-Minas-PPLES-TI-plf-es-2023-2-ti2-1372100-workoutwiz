@@ -294,33 +294,34 @@
     - LINKS DOS ICONES
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script>
-    const select = document.getElementById("exercicios");
+    document.getElementById("planejamento").addEventListener("submit", (e) => {
+      e.preventDefault();
+      
+      // Captura os valores do formulário
+      let selecao = document.getElementById("selecao").value;
+      let datas = document.getElementById("datas").value;
+      
+      // Cria o objeto com os dados do formulário
+      let data1 = {
+        treinoId: 1,
+        Tempo: selecao,
+        Data: datas
+      };
+      console.log(data1);
     
-    select.addEventListener("mousedown", (e) => {
-      e.preventDefault();
-      
-      const option = e.target;
-      
-      if (option.tagName === "OPTION") {
-        option.selected = !option.selected;
-      }
-    });
-  </script>
-  <script>
-    const selectPreferencias = document.getElementById("preferencias");
-  
-    selectPreferencias.addEventListener("mousedown", (e) => {
-      e.preventDefault();
-  
-      const option = e.target;
-  
-      if (option.tagName === "OPTION") {
-        option.selected = !option.selected;
-      }
-    });
-  </script>
+      // Envia o pedido POST à API
+      axios.post('http://localhost:8080/planejamentotreino', data1)
+          .then(function (response) {
+              console.log(response.data);
+          })
+          .catch(function (error) {
+              console.error(error);
+          });
+    })
+    </script>
+</body>
 
 </body>
 </html>

@@ -1,22 +1,12 @@
 ## 5. Indicadores de desempenho
 
-_Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classes e no DER. Colocar no mínimo 5 indicadores._
 
-Perspectivas de medidas de avaliação de desempenho de processos:
+| **Indicador**                     | **Objetivos**                                                   | **Descrição**                                                                                                   | **Fonte dados**                         | **Perspectiva**             |
+|-----------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------------------------|
+| Satisfação Média do Cliente       | Avaliar a qualidade do serviço prestado pelo treinador          | Calcula a média das avaliações dadas pelos clientes nos feedbacks                                                | Tabela `Feedback`                       | Cliente                     |
+| Taxa de Progresso dos Clientes    | Medir a eficácia dos planos de treino                           | Porcentagem de clientes que atingem suas metas dentro do tempo estipulado no plano de treino                     | Tabela `Progresso`, `PlanodeTreino`     | Processos internos          |
+| Percentual de Conformidade com o Plano | Garantir que os clientes estejam seguindo os planos de treino   | Mede a proporção de treinos realizados versus os planejados                                                      | Tabelas `CriacaoPlanoDeTreino`, `ExecucaodosTreinos` | Processos internos          |
+| Taxa de Retenção de Clientes      | Avaliar o nível de retenção de clientes                         | Calcula a porcentagem de clientes que continuam ativos após um determinado período                               | Tabela `Cliente`                        | Cliente                     |
+| Taxa de Aperfeiçoamento dos Treinadores | Medir o desenvolvimento profissional dos treinadores           | Número de treinamentos ou certificações adicionais obtidas pelos treinadores                                     | Tabela `Treinador`                      | Aprendizado e Crescimento   |
 
-* Financeira
-* Cliente
-* Aprendizado e Crescimento
-* Processos internos
 
-Veja o link [Heflo - Types of Process Performance Metrics](https://www.heflo.com/blog/business-management/process-performance-metrics/)
-
-_Usar o seguinte modelo:_
-
-| **Indicador** | **Objetivos** | **Descrição** | **Fonte dados** | **Perspectiva** |
-| ---           | ---           | ---           | ---             | ---             |
-| Percentual de reclamações | Avaliar quantitativamente as reclamações | Percentual de reclamações em relação ao total atendimento | Tabela reclamações | Aprendizado e Crescimento |
-| Taxa de Requisições abertas | Melhorar a prestação de serviços medindo a porcentagem de requisições | Mede % de requisições atendidas na semana | Tabela solicitações | Processos internos |
-| Taxa de entrega de material | Manter controle sobre os materiais que estão sendo entregues | Mede % de material entregue dentro do mês | Tabela Pedidos | Clientes |
-
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classes e no DER.

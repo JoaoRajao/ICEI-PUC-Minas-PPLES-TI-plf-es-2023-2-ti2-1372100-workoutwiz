@@ -405,6 +405,30 @@
     });
   </script>
   <script>
+const searchButton = document.querySelector('.search-button');
+searchButton.addEventListener('click', async () => {
+  const exerciseName = document.getElementById('exercise-search').value;
+
+  // Example API endpoint, replace with your actual endpoint
+  const apiUrl = 'http://localhost:8080/aprimoramentoorientacoes';
+
+  try {
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ exerciseName }),
+    });
+
+    // Handle the response accordingly
+    const result = await response.json();
+    console.log(result);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+});
+    
     const searchButton = document.querySelector(".search-button");
 const mediaContainer = document.querySelector(".media-container");
 const searchResults = document.querySelector(".search-results");

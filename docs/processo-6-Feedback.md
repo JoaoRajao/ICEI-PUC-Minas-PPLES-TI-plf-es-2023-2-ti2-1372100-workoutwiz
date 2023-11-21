@@ -1,4 +1,4 @@
-### 3.3.6 Processo 6 – *FeedBack dos profissionais :*
+### 3.3.6 Processo 6 – *FeedBack:*
 
 Descrição: Este processo visa aprimorar a motivação dos usuários por meio de um sistema de feedbacks, promover a interação entre os usuários e criar um senso de comunidade através de recursos de compartilhamento e espaços de discussão onde possam deixar uma avaliação de algumas interações que tiveram com os profissionais. 
 
@@ -7,7 +7,7 @@ Descrição: Este processo visa aprimorar a motivação dos usuários por meio d
 
 #### Detalhamento das atividades
 
-  Atividade 1- Escrever um comentario para a comunidade ou profissional .
+  Atividade 1- Escrever um comentario.
   
   Atividade 2 - Oferecer recursos de compartilhamento para que os usuários possam mostrar suas experiencias.
   

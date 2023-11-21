@@ -1,4 +1,4 @@
-### 3.3.2 Processo 2 – Criação de Planos de Treino Personalizados
+### 3.3.2 Processo 2 – Plano de Treino
 
 
 Este processo utiliza as informações coletadas durante a avaliação inicial  para criar planos de exercícios altamente personalizados. Esses planos são cuidadosamente adaptados aos objetivos individuais do usuário e incluem muitos exercícios que visam diretamente objetivos como crescimento muscular, perda de peso ou resistência. Além disso, aumentos graduais de intensidade e dificuldade são implementados ao longo do tempo para evitar a estagnação e garantir que o treino continue desafiador e eficaz.

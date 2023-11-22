@@ -24,7 +24,7 @@ Exemplo: conforme diagrama apresentado, as entidades participantes da solução 
 
 _Apresente o modelo de dados por meio de um modelo relacional ou Diagrama de Entidade-Relacionamento (DER) que contemple todos os conceitos e atributos apresentados no item anterior._ 
 
-![Diagrama de Entidade Relacionamento de Exemplo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1372100-workoutwiz/blob/master/docs/images/modeloDadosAtualizado(1).png)
+![Diagrama de Entidade Relacionamento de Exemplo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1372100-workoutwiz/blob/master/docs/images/modeloDadosAtualizado(2).png)
 
 ### 4.4. Tecnologias
 

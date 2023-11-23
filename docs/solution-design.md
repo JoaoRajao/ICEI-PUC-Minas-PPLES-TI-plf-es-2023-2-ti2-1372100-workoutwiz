@@ -38,7 +38,12 @@ _Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou s
 | Log do sistema | Log4J           |
 | Teste          | JUnit           |
 | Deploy         | Github Pages    |
-
+| IDE            | VSCode          |
+| Banco de Dados | MySQL           |
+| TaskRunner     | Maven           |
+| Suporte API    | Postman         |
+| Framework      | jQuery          |
+ 
 
 ### 4.5. Guias de estilo
 

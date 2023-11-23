@@ -28,7 +28,7 @@ _Apresente o modelo de dados por meio de um modelo relacional ou Diagrama de Ent
 
 ### 4.4. Tecnologias
 
-_Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas. Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário._
+![Mapa Mental de Desenvolvimento de Produto](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1372100-workoutwiz/assets/130581220/b6877db1-1ce7-4edf-a132-aa40b4c4428c)
 
 | **Dimensão**   | **Tecnologia**  |      
 | ---            | ---             |                                                     

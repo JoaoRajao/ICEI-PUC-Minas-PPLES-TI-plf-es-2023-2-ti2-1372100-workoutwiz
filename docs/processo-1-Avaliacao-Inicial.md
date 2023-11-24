@@ -11,11 +11,11 @@ Este processo envolve  uma avaliação inicial detalhada do usuário, entendendo
 
 #### Detalhamento das atividades
 
-* **Atividade 1 - Avaliação Inicial**: Realizar uma avaliação inicial do usuário, incluindo objetivos, histórico de treinamento e restrições físicas.
-* **Atividade 2 - Coleta de Dados**: Coletar dados sobre nível de condicionamento, preferências de treino e disponibilidade de tempo.
+* **Atividade 1 - Análise Inicial**: Realizar uma análise inicial do usuário, incluindo objetivos, histórico de treinamento e restrições físicas.
+* **Atividade 2 - Planejamento Individualizado**: Coletar dados sobre nível de condicionamento, preferências de treino e disponibilidade de tempo.
 * **Atividade 3 - Perfil Personalizado**: Gerar um perfil personalizado que guiará a criação de planos de treinamento específicos.
 
-**Avaliação Inicial**
+**Análise Inicial**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
@@ -28,7 +28,7 @@ Este processo envolve  uma avaliação inicial detalhada do usuário, entendendo
 | Cadastrar            | Realiza o proceso de cadastro da avaliação inicial | --- |
 
 
-**Coleta de dados**
+**Planejamento Individualizado**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |

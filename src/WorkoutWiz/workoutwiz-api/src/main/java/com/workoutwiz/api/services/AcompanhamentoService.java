@@ -15,6 +15,7 @@ public class AcompanhamentoService {
     public interface QueryAcompanhamentoCallback {
         void onResult(List<AcompanhamentoModel> acompanhamentoList, boolean success);
     }
+
     @FunctionalInterface
     public interface RegisterAcompanhamentoCallback {
         void onResult(boolean success);
@@ -23,12 +24,13 @@ public class AcompanhamentoService {
     public static void registerAcompanhamento(AcompanhamentoModel acompanhamento, RegisterAcompanhamentoCallback callback) {
         DatabaseManager.execute((success, connection) -> {
             if (success) {
-                String sql = "INSERT INTO Progresso (TreinoID, PesosLevantados, DistanciasPercorridas, TemposAlcancados) VALUES (?, ?, ?, ?)";
+                String sql = "INSERT INTO AcompanhamentoProgresso (TreinoID, PesosLevantados, DistanciasPercorridas, TemposAlcancados, TaxaProgresso) VALUES (?, ?, ?, ?, ?)";
                 try (PreparedStatement stmt = connection.prepareStatement(sql)) {
                     stmt.setInt(1, acompanhamento.getTreinoId());
                     stmt.setInt(2, acompanhamento.getPesosLevantados());
                     stmt.setInt(3, acompanhamento.getDistanciasPercorridas());
                     stmt.setInt(4, acompanhamento.getTemposAlcancados());
+                    stmt.setInt(5, acompanhamento.getTaxaProgresso());  // Adicionando o novo campo
                     stmt.executeUpdate();
                     callback.onResult(true); // Callback com sucesso
                 } catch (SQLException e) {
@@ -41,10 +43,11 @@ public class AcompanhamentoService {
             }
         });
     }
+
     public static void queryAcompanhamento(QueryAcompanhamentoCallback callback) {
         DatabaseManager.execute((success, connection) -> {
             if (success) {
-                String sql = "SELECT TreinoID, PesosLevantados, DistanciasPercorridas, TemposAlcancados FROM Progresso";
+                String sql = "SELECT TreinoID, PesosLevantados, DistanciasPercorridas, TemposAlcancados, TaxaProgresso FROM AcompanhamentoProgresso";
                 try (PreparedStatement stmt = connection.prepareStatement(sql)) {
                     ResultSet rs = stmt.executeQuery();
                     List<AcompanhamentoModel> acompanhamentoList = new ArrayList<>();
@@ -54,8 +57,9 @@ public class AcompanhamentoService {
                         int pesosLevantados = rs.getInt("PesosLevantados");
                         int distanciasPercorridas = rs.getInt("DistanciasPercorridas");
                         int temposAlcancados = rs.getInt("TemposAlcancados");
+                        int taxaProgresso = rs.getInt("TaxaProgresso");
 
-                        AcompanhamentoModel acompanhamento = new AcompanhamentoModel(treinoId, pesosLevantados, distanciasPercorridas, temposAlcancados);
+                        AcompanhamentoModel acompanhamento = new AcompanhamentoModel(treinoId, pesosLevantados, distanciasPercorridas, temposAlcancados, taxaProgresso);
                         acompanhamentoList.add(acompanhamento);
                     }
 
@@ -71,4 +75,3 @@ public class AcompanhamentoService {
         });
     }
 }
-

@@ -107,6 +107,11 @@
               <label for="tempos-alcançados">Tempos alcançados</label>
               <input type="text" id="tempos-alcancados" name="tempos-alcancados" pattern="\d+" title="Apenas números" placeholder="Informe os tempos alcançados" required>
             </div>
+
+            <div class="form-group">
+              <label for="taxa-progresso">Taxa de Progresso</label>
+              <input type="text" id="taxa-progresso" name="taxa-progresso" pattern="\d+" title="Apenas números" placeholder="Informe a taxa de progresso" required>
+            </div>
           
            <div class="button-margin"></div>
 
@@ -283,30 +288,31 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script>
+  <script>
     document.getElementById("acompanhamento").addEventListener("submit", (e) => {
-        e.preventDefault();
+      e.preventDefault();
 
-        
-        let pesosLevantados = document.getElementById("pesos-levantados").value;
-        let distanciasPercorridas = document.getElementById("distancias-percorridas").value;
-        let temposAlcancados = document.getElementById("tempos-alcancados").value;
+      let pesosLevantados = document.getElementById("pesos-levantados").value;
+      let distanciasPercorridas = document.getElementById("distancias-percorridas").value;
+      let temposAlcancados = document.getElementById("tempos-alcancados").value;
+      let taxaProgresso = document.getElementById("taxa-progresso").value;
 
-        let data = {
-            treinoId: 1,
-            pesosLevantados: pesosLevantados,
-            distanciasPercorridas: distanciasPercorridas,
-            temposAlcancados: temposAlcancados
-        };
+      let data = {
+        treinoId: 3,
+        pesosLevantados: pesosLevantados,
+        distanciasPercorridas: distanciasPercorridas,
+        temposAlcancados: temposAlcancados,
+        taxaProgresso: taxaProgresso
+      };
 
-        axios.post('http://localhost:8080/acompanhamento', data)
-            .then(function (response) {
-                console.log(response.data);
-            })
-            .catch(function (error) {
-                console.error(error);
-            });
+      axios.post('http://localhost:8080/acompanhamento', data)
+        .then(function (response) {
+          console.log(response.data);
+        })
+        .catch(function (error) {
+          console.error(error);
+        });
     });
-</script>
+  </script>
 </body>
 </html>

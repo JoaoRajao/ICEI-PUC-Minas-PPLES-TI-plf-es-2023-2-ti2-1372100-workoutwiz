@@ -5,12 +5,14 @@ public class AcompanhamentoModel {
     private final int  pesosLevantados;
     private final int distanciasPercorridas;
     private final int temposAlcancados;
+    private final int taxaProgresso;
 
-    public AcompanhamentoModel(int treinoId, int pesosLevantados, int distanciasPercorridas, int temposAlcancados) {
+    public AcompanhamentoModel(int treinoId, int pesosLevantados, int distanciasPercorridas, int temposAlcancados, int taxaProgresso) {
         this.treinoId = treinoId;
         this.pesosLevantados = pesosLevantados;
         this.distanciasPercorridas = distanciasPercorridas;
         this.temposAlcancados = temposAlcancados;
+        this.taxaProgresso = taxaProgresso;
     }
 
     public int getTreinoId() {
@@ -25,9 +27,9 @@ public class AcompanhamentoModel {
         return distanciasPercorridas;
     }
 
-    public int getTemposAlcancados() {
-        return temposAlcancados;
-    }
+    public int getTemposAlcancados() { return temposAlcancados; }
+
+    public int getTaxaProgresso() { return taxaProgresso; }
 
 }
 

@@ -4,13 +4,15 @@ public class FeedBackModel {
     private final String clientId;
     private final String name;
     private final String publico;
-    private final String text;
+    private final String texto;
+    private final Integer mediaSatisfacao;
 
-    public FeedBackModel(String clientId, String name, String publico, String text) {
+    public FeedBackModel(String clientId, String name, String publico, String texto , Integer mediaSatisfacao ) {
         this.clientId = clientId;
         this.name = name;
         this.publico = publico;
-        this.text = text;
+        this.texto = texto;
+        this.mediaSatisfacao = mediaSatisfacao;
     }
 
     public String getClientId() {
@@ -25,7 +27,9 @@ public class FeedBackModel {
         return publico;
     }
 
-    public String getText() {
-        return text;
+    public String getTexto() {
+        return texto;
     }
+
+    public Integer getMediaSatisfacao() { return mediaSatisfacao;}
 }

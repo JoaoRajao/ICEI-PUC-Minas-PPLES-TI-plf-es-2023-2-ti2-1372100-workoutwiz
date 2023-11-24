@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workoutwiz</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+  <div id="progressoChartContainer" style="width: 80%; margin: auto; padding-top: 20px;">
+    <canvas id="progressoChart"></canvas>
+  </div>
+
+  <script>
+
+    function fetchData() {
+      axios.get('http://localhost:8080/acompanhamento')
+        .then(function (response) {
+          const dados = response.data;
+
+      
+          updateChart(dados);
+        })
+        .catch(function (error) {
+          console.error(error);
+        });
+    }
+
+
+    function updateChart(data) {
+  // Agregando os dados por treinoId
+  const aggregatedData = data.acompanhamentoList.reduce((acc, entry) => {
+    if (!acc[entry.treinoId]) {
+      acc[entry.treinoId] = {
+        treinoId: entry.treinoId,
+        taxaProgresso: 0
+      };
+    }
+    acc[entry.treinoId].taxaProgresso += entry.taxaProgresso;
+    return acc;
+  }, {});
+
+  // Convertendo o objeto agregado em um array
+  const finalData = Object.values(aggregatedData);
+
+  // Preparando os dados para o gráfico
+  const labels = finalData.map(entry => `Treino ${entry.treinoId}`);
+  const taxasDeProgresso = finalData.map(entry => entry.taxaProgresso);
+
+  // Configuração do gráfico
+  const config = {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Taxa de Progresso Total por Treino',
+        data: taxasDeProgresso,
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  };
+
+  // Criando o gráfico
+  const ctx = document.getElementById('progressoChart').getContext('2d');
+  new Chart(ctx, config);
+}
+    fetchData();
+  </script>
+
+</body>
+</html>

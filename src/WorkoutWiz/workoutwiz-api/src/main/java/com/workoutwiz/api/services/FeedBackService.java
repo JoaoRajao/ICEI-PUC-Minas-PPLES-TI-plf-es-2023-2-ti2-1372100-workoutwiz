@@ -22,12 +22,13 @@ public class FeedBackService {
     public static void registerFeedback(FeedBackModel feedback, RegisterFeedbackCallback callback) {
         DatabaseManager.execute((success, connection) -> {
             if (success) {
-                String sql = "INSERT INTO Feedback (ClienteID, Nome, Publico, Texto) VALUES (?, ?, ?, ?)";
+                String sql = "INSERT INTO Feedback (ClienteID, Nome, Publico, Texto ,MediaSatisfacao) VALUES (?, ?, ?, ?, ?)";
                 try (PreparedStatement stmt = connection.prepareStatement(sql)) {
                     stmt.setString(1, feedback.getClientId());
                     stmt.setString(2, feedback.getName());
                     stmt.setString(3, feedback.getPublico());
-                    stmt.setString(4, feedback.getText());
+                    stmt.setString(4, feedback.getTexto());
+                    stmt.setInt(5, feedback.getMediaSatisfacao());
                     stmt.executeUpdate();
                     callback.onResult(true); // Callback com sucesso
                 } catch (SQLException e) {
@@ -43,7 +44,7 @@ public class FeedBackService {
     public static void queryFeedback(QueryFeedbackCallback callback) {
         DatabaseManager.execute((success, connection) -> {
             if (success) {
-                String sql = "SELECT ClienteID, Nome, Publico, Texto FROM Feedback";
+                String sql = "SELECT ClienteID, Nome, Publico, Texto , MediaSatisfacao FROM Feedback";
                 try (PreparedStatement stmt = connection.prepareStatement(sql)) {
                     ResultSet rs = stmt.executeQuery();
                     List<FeedBackModel> feedbackList = new ArrayList<>();
@@ -52,9 +53,9 @@ public class FeedBackService {
                         String clientId = rs.getString("ClienteID");
                         String name = rs.getString("Nome");
                         String publico = rs.getString("Publico");
-                        String text = rs.getString("Texto");
-
-                        FeedBackModel feedback = new FeedBackModel(clientId, name, publico, text);
+                        String texto = rs.getString("Texto");
+                        Integer mediaSatisfacao = rs.getInt("MediaSatisfacao");
+                        FeedBackModel feedback = new FeedBackModel(clientId, name, publico, texto , mediaSatisfacao);
                         feedbackList.add(feedback);
                     }
 

@@ -92,7 +92,12 @@
           <h1 class="h1 hero-title">Feedbacks Cadastrados</h1>
 
           <div class="planning-form" id="feedbacks-container">
-           
+            <h2>Media de avaliação</h2>
+            <div id="media-satisfacao"></div>
+            <canvas id="satisfactionChart" width="800" height="400"></canvas>
+            <br>
+            <br>
+            <br>
           </div>
 
         </div>
@@ -259,34 +264,70 @@
   -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const feedbacksContainer = document.getElementById("feedbacks-container");
-  
-      axios.get('http://localhost:8080/feedback')
+   document.addEventListener("DOMContentLoaded", function () {
+    const feedbacksContainer = document.getElementById("feedbacks-container");
+    const mediaSatisfacaoContainer = document.getElementById("media-satisfacao");
+
+    axios.get('http://localhost:8080/feedback')
         .then(response => {
-          const jsonFeedbacks = response.data.feedbackList; // Acessando feedbackList
-  
-          jsonFeedbacks.forEach(feedback => {
-            const feedbackElement = document.createElement("div");
-            feedbackElement.classList.add("feedback-item");
-  
-            feedbackElement.innerHTML = `
-              <p class="form-group"><strong>Cliente ID:</strong> ${feedback.clientId}</p>
-              <p class="form-group"><strong>Nome:</strong> ${feedback.name}</p>
-              <p class="form-group"><strong>Público:</strong> ${feedback.publico}</p>
-              <p class="form-group"><strong>Feedback:</strong> ${feedback.text}</p>
-              <br>
-            `;
-  
-            feedbacksContainer.appendChild(feedbackElement);
-          });
+            const jsonFeedbacks = response.data.feedbackList;
+            let totalSatisfacao = 0;
+            let labels = [];
+            let satisfactionData = [];
+
+            jsonFeedbacks.forEach((feedback, index) => {
+                const feedbackElement = document.createElement("div");
+                feedbackElement.classList.add("feedback-item");
+
+                feedbackElement.innerHTML = `
+                    <p class="form-group"><strong>Cliente ID:</strong> ${feedback.clientId}</p>
+                    <p class="form-group"><strong>Nome:</strong> ${feedback.name}</p>
+                    <p class="form-group"><strong>Público:</strong> ${feedback.publico}</p>
+                    <p class="form-group"><strong>Feedback:</strong> ${feedback.text}</p>
+                    <p class="form-group"><strong>Satisfação:</strong> ${feedback.mediaSatisfacao}</p>
+                    <br>
+                `;
+
+                feedbacksContainer.appendChild(feedbackElement);
+                totalSatisfacao += feedback.mediaSatisfacao;
+                labels.push(`Feedback ${index + 1}`);
+                satisfactionData.push(feedback.mediaSatisfacao);
+            });
+
+            const mediaSatisfacao = totalSatisfacao / jsonFeedbacks.length;
+            mediaSatisfacaoContainer.innerHTML = `Média de Satisfação: ${mediaSatisfacao.toFixed(2)}`;
+
+            // Criando o gráfico com uma coluna para cada feedback
+            const ctx = document.getElementById('satisfactionChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Satisfação por Feedback',
+                        data: satisfactionData,
+                        backgroundColor: labels.map(() => 'rgba(54, 162, 235, 0.2)'),
+                        borderColor: labels.map(() => 'rgba(54, 162, 235, 1)'),
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
         })
         .catch(error => {
-          console.error('Erro ao buscar feedbacks:', error);
+            console.error('Erro ao buscar feedbacks:', error);
         });
-    });
+});
   </script>
   
   

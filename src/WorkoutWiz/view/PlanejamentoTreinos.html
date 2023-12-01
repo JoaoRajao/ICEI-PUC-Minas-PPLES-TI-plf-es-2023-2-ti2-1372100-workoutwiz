@@ -76,7 +76,8 @@
 
         </ul>
 
-        <button class="btn btn-secondary">Login</button>
+        <button id="btn-login" class="btn btn-secondary">Login</button>
+        <button id="btn-voltar" class="btn btn-secondary" onclick="window.location.href='Home.html'">Voltar Home</button>
 
       </nav>
 
@@ -90,17 +91,9 @@
         <div class="container">
           <h1 class="h1 hero-title">Cronograma Planejamento de Treino</h1>
          
-            <form class="cronograma-form" action="AprimoramentoOrientacoes.html" method="POST">
+            <form class="cronograma-form" id="planejemento-treino">
   
-              <div class="form-group">
-                <label for="nome">Nome do campo:</label>
-                <input type="text" id="nome" name="nome" required>
-              </div>
-          
-                <div class="form-group">
-                <label for="tipo">Tipo:</label>
-                <input type="text" id="tipo" name="tipo" required>
-              </div>
+              
           
                 <div class="form-group">
                 <label for="selecao">Escolher semanal/mensal:</label>
@@ -124,8 +117,6 @@
                 <input type="date" id="datas" name="datas" required>
               </div>
                 
-          
-                <button type="submit" name="confirmar">Confirmar</button><br>
                 <button type="submit" name="adicionar_cronograma">Adicionar cronograma</button>
             </form>
           
@@ -321,6 +312,18 @@
       }
     });
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const adicionarCronogramaForm = document.getElementById('planejemento-treino');
+    
+    adicionarCronogramaForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      window.location.href = "Home.html";
+    });
+  });
+</script>
+
 
 </body>
 </html>

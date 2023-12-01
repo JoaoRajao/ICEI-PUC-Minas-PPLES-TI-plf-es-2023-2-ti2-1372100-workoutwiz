@@ -76,7 +76,8 @@
 
         </ul>
 
-        <button class="btn btn-secondary">Login</button>
+        <button id="btn-login" class="btn btn-secondary">Login</button>
+        <button id="btn-voltar" class="btn btn-secondary" onclick="window.location.href='Home.html'">Voltar Home</button>
 
       </nav>
 
@@ -88,8 +89,8 @@
     <!-- Seção "Criação do Plano de Treino" -->
     <section class="workout-creation">
       <div class="container">
-        <h2 class="h2">Criação do Plano de Treino</h2>
         <form class="workout-form">
+          <h2 class="h2">Criação do Plano de Treino</h2>
           <div class="form-group">
             <label for="frequency">Frequência de Treino (1-7 dias):</label>
             <input type="number" id="frequency" name="frequency" min="1" max="7" required>
@@ -102,14 +103,7 @@
             </select>
             <textarea id="customModality" name="customModality" placeholder="Digite a modalidade personalizada"></textarea>
           </div>
-          <button type="button" class="generate-workout-button" onclick="window.location.href='AcompanhamentoProgresso1.html'">Gerar Plano de Treino</button>
-        </form>
-      </div>
-    </section>
-  
-    <!-- Seção "Incorporação de Exercícios" -->
-    <section class="exercise-incorporation">
-      <div class="container">
+        
         <h2 class="h2">Incorporação de Exercícios</h2>
         <form class="exercise-form">
           <div class="form-group">
@@ -130,24 +124,24 @@
           </div>
           <div class="form-group">
             <label for="muscle-progress">Ganho de massa muscular desejada (kg):</label>
-            <input type="number" id="muscle-progress" name="muscle-progress" step="0.1">
+            <input type="number" id="muscle-progress" name="muscle-progress" step="0.1" required>
           </div>
           <div class="form-group">
             <label for="weight-progress">Meta de Peso (kg):</label>
-            <input type="number" id="weight-progress" name="weight-progress" step="0.1">
+            <input type="number" id="weight-progress" name="weight-progress" step="0.1" required>
           </div>
           <div class="form-group">
             <label for="resistance-increase">Nível de Resistência (0-5):</label>
-            <input type="number" id="resistance-increase" name="resistance-increase" min="0" max="5">
+            <input type="number" id="resistance-increase" name="resistance-increase" min="0" max="5" required>
             <textarea id="resistance-feedback" name="resistance-feedback" placeholder="A partir do feedback do aumento da resistência, é possível determinar o nível de complexidade e intensidade do plano de treino"></textarea>
           </div>
           <div class="form-group">
             <label for="weight-progress">Meta de Peso (kg):</label>
-            <input type="number" id="weight-progress" name="weight-progress" step="0.1">
+            <input type="number" id="weight-progress" name="weight-progress" step="0.1" required>
           </div>
-          <button type="button" class="save-progress-button" onclick="window.location.href='AcompanhamentoProgresso1.html'">Salvar Dados</button>
+          <button type="button" class="save-progress-button">Salvar Dados</button>
         </form>
-      </div>
+      
     </section>
   
     <!-- Seção "Estabelecer Progressões" -->
@@ -453,6 +447,16 @@ generatePlanButton.addEventListener("click", function () {
       }
     });
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const saveProgressButton = document.querySelector(".save-progress-button");
+
+    saveProgressButton.addEventListener("click", function () {
+      window.location.href = "AcompanhamentoProgresso1.html";
+    });
+  });
+</script>
 
 </body>
 </html>

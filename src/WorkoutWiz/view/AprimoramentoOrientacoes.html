@@ -76,7 +76,8 @@
 
         </ul>
 
-        <button class="btn btn-secondary">Login</button>
+        <button id="btn-login" class="btn btn-secondary">Login</button>
+        <button id="btn-voltar" class="btn btn-secondary" onclick="window.location.href='Home.html'">Voltar Home</button>
 
       </nav>
 
@@ -112,7 +113,7 @@
     <div class="feedback-form" style="display: none;">
       <textarea id="feedback-text" placeholder=""></textarea>
       <input type="number" id="feedback-rating" placeholder="Avalie de 0 a 5">
-      <button class="save-feedback-button" onclick="window.location.href='FeedbackProfissionais.html'">Salvar Feedback</button>
+      <button class="save-feedback-button">Salvar Feedback</button>
     </div>
   </article>
 </main>
@@ -461,6 +462,16 @@ saveFeedbackButton.addEventListener("click", () => {
       }
     })
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const saveFeedbackButton = document.querySelector(".save-feedback-button");
+
+    saveFeedbackButton.addEventListener("click", () => {
+    window.location.href = "FeedbackProfissionais.html";
+    });
+  });
+</script>
 
 </body>
 </html>

@@ -76,7 +76,8 @@
 
         </ul>
 
-        <button class="btn btn-secondary">Login</button>
+        <button id="btn-login" class="btn btn-secondary">Login</button>
+        <button id="btn-voltar" class="btn btn-secondary" onclick="window.location.href='Home.html'">Voltar Home</button>
 
       </nav>
 
@@ -308,6 +309,7 @@
       axios.post('http://localhost:8080/acompanhamento', data)
         .then(function (response) {
           console.log(response.data);
+          window.location.href = 'AcompanhamentoProgresso2.html';
         })
         .catch(function (error) {
           console.error(error);

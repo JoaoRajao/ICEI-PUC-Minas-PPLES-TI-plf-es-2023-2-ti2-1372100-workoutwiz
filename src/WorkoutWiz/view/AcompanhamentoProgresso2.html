@@ -76,7 +76,8 @@
 
         </ul>
 
-        <button class="btn btn-secondary">Login</button>
+        <button id="btn-login" class="btn btn-secondary">Login</button>
+        <button id="btn-voltar" class="btn btn-secondary" onclick="window.location.href='Home.html'">Voltar Home</button>
 
       </nav>
 
@@ -96,25 +97,10 @@
             </p>
           </div>
 
-          <figure class="hero-banner">
-            <img src="https://via.placeholder.com/800x500" alt="Gráfico Do Desempenho" class="graph-image">
-          </figure>
-        </div>
-
-        <div class="container">
-
-          <div class="hero-content">
-            <h1 class="h1 hero-title">Relatório</h1>
-            <p class="section-text">
-              Confira o seu relatório de desempenho nas atividades e analise como seu esforço e dedicação estão moldando seu progresso.
-            </p>
+          <div class="hero-banner">
+            <canvas id="progressoChart" class="graph-image"></canvas>
           </div>
-
-          <figure class="hero-banner">
-            <img src="https://via.placeholder.com/800x500" alt="Relatório" class="graph-image">
-          </figure>
         </div>
-
 
         <section class="cta">
             <div class="title-wrapper">
@@ -123,7 +109,7 @@
                 <span>Desempenho não atingiu as metas especuladas?</span>
               </h2>
   
-              <button class="btn btn-primary" id="novo-planejamento-button" onclick="window.location.href='AcompanhamentoProgresso3.html'">Realizar Novo Planejamento</button>
+              <button class="btn btn-primary" id="novo-planejamento-button" onclick="window.location.href='PlanejamentoTreinos.html'">Realizar Novo Planejamento</button>
   
             </div>
 
@@ -287,7 +273,73 @@
   <!-- 
     - SCRIPT JS
   -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+
+    function fetchData() {
+      axios.get('http://localhost:8080/acompanhamento')
+        .then(function (response) {
+          const dados = response.data;
+
+      
+          updateChart(dados);
+        })
+        .catch(function (error) {
+          console.error(error);
+        });
+    }
+
+
+    function updateChart(data) {
+  // Agregando os dados por treinoId
+  const aggregatedData = data.acompanhamentoList.reduce((acc, entry) => {
+    if (!acc[entry.treinoId]) {
+      acc[entry.treinoId] = {
+        treinoId: entry.treinoId,
+        taxaProgresso: 0
+      };
+    }
+    acc[entry.treinoId].taxaProgresso += entry.taxaProgresso;
+    return acc;
+  }, {});
+
+  // Convertendo o objeto agregado em um array
+  const finalData = Object.values(aggregatedData);
+
+  // Preparando os dados para o gráfico
+  const labels = finalData.map(entry => `Treino ${entry.treinoId}`);
+  const taxasDeProgresso = finalData.map(entry => entry.taxaProgresso);
+
+  // Configuração do gráfico
+  const config = {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Taxa de Progresso Total por Treino',
+        data: taxasDeProgresso,
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  };
+
+  // Criando o gráfico
+  const ctx = document.getElementById('progressoChart').getContext('2d');
+  new Chart(ctx, config);
+}
+    fetchData();
+  </script>
 
   <!-- 
     - LINKS DOS ICONES

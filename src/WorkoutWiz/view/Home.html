@@ -15,7 +15,7 @@
   <!-- 
     - CSS LINK
   -->
-  <link rel="stylesheet" href="./assets/css/FeedbackProfissionais.css">
+  <link rel="stylesheet" href="./assets/css/Home.css">
 
   <!-- 
     - GOOGLE FONTS LINK
@@ -76,8 +76,7 @@
 
         </ul>
 
-        <button id="btn-login" class="btn btn-secondary">Login</button>
-        <button id="btn-voltar" class="btn btn-secondary" onclick="window.location.href='Home.html'">Voltar Home</button>
+        <button class="btn btn-secondary">Login</button>
 
       </nav>
 
@@ -85,92 +84,139 @@
   </header>
 
 
+
+
   <main>
     <article>
-      <section class="hero">
+      <section class="departments">
         <div class="container">
-          <h1 class="h1 hero-title">Escreva seu Feedback</h1>
-         
-         
 
-          <section class="contact-form">
-              <form id="feedback">
-                <div class="form-group">
-                  <label for="name">Nome:</label>
-                  <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                  <label for="email">E-mail:</label>
-                  <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                  <label for="message">Mensagem:</label>
-                  <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn" >Enviar</button>
-              </form>
+          <h2 class="h2 departments-title">Workoutwiz</h2>
+
+          <ul class="departments-list">
+
+            <li>
+              <div class="departments-card">
+
+               
+                <a href="AvaliacaoInicial.html">
+                  <h3 class="h3 card-title">Avaliação Inicial</h3>
+                </a>
+
+             
+
+                <a href="AvaliacaoInicial.html" class="card-link">
+                    <span>Ir para página</span>
+
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
             
-            <p>Compartilhe nas Redes Sociais</p>
+            <li>
+              <div class="departments-card">
 
-            <ul class="social-list">
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-google"></ion-icon>
+                <a href="CriacaoPlanoDeTreino.html">
+                  <h3 class="h3 card-title">Plano de Treino</h3>
                 </a>
-              </li>
+
+                
+                <a href="CriacaoPlanoDeTreino.html" class="card-link">
+                    <span >Ir para página</span>
+
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="departments-card">
+
+                <a href="AcompanhamentoProgresso1.html">
+                  <h3 class="h3 card-title">Acompanhamento Progresso</h3>
+                </a>
+
+                <a href="AcompanhamentoProgresso1.html" class="card-link">
+                    <span>Ir para página</span>
+
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+                <div class="departments-card">
   
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
+                  <a href="PlanejamentoTreinos.html">
+                    <h3 class="h3 card-title">Planejamento de Treino</h3>
+                  </a>
   
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
+                 
+  
+                  <a href="PlanejamentoTreinos.html" class="card-link">
+                    <span>Ir para página</span>
+  
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </a>
+  
+                </div>
               </li>
-            </ul>
 
-          </section>
+              <li>
+                <div class="departments-card">
+  
+                  <a href="AprimoramentoOrientacoes.html">
+                    <h3 class="h3 card-title">Aprimoramento Orientações Técnicas</h3>
+                  </a>
+  
+                 
+  
+                  <a href="AprimoramentoOrientacoes.html" class="card-link">
+                    <span>Ir para página</span>
+  
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </a>
+  
+                </div>
+              </li>
+
+              <li>
+                <div class="departments-card">
+  
+                  <a href="FeedbackProfissionais.html">
+                    <h3 class="h3 card-title">Feedback</h3>
+                  </a>
+  
+                
+  
+                  <a href="FeedbackProfissionais.html" class="card-link">
+                    <span>Ir para página</span>
+  
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </a>
+  
+                </div>
+              </li>
+
+          </ul>
+
+          <button class="btn btn-primary">Acessar Perfil</button>
+
         </div>
       </section>
-      
+
     </article>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script>
-    document.getElementById("feedback").addEventListener("submit", (e) => {
-      e.preventDefault()
-      
-      let nome = document.getElementById("name").value
-      let email = document.getElementById("email").value
-      let message = document.getElementById("message").value
-
-      let data1 = {
-        clientId: 2,
-        name: nome,
-        publico: email,
-        text: message
-      }
-      console.log(data1)
-
-      axios.post('http://localhost:8080/feedback', data1)
-          .then(function (response) {
-              console.log(response.data);
-          })
-          .catch(function (error) {
-              console.error(error);
-          });
-    })
-    
-     
-  </script>
 
 
-  <!-- 
+
+
+   <!-- 
     - FOOTER
   -->
   <footer class="footer">

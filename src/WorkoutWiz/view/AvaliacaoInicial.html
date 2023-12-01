@@ -76,85 +76,83 @@
 
         </ul>
 
-        <button class="btn btn-secondary">Login</button>
+        <button id="btn-login" class="btn btn-secondary">Login</button>
+        <button id="btn-voltar" class="btn btn-secondary" onclick="window.location.href='Home.html'">Voltar Home</button>
 
       </nav>
 
     </div>
   </header>
-  
 
 
 
+  <main>
+    <article>
+      <section class="hero">
+        <div class="container">
 
-<main>
-  <article>
-    <section class="hero">
-      <div class="container">
-        <div id="Avaliação Inicial Personalizada">
-          <h2>Avaliação Inicial</h2>
-          <form action="CriacaoPlanoDeTreino.html" method="POST">
-            <label for="selecao">Objetivos:</label><br>
-              <select id="selecao" name="selecao">
-                  <option value="Emagrecer">Emagrecer</option>
-                  <option value="Ganhar massa muscular">Ganhar massa muscular</option>
-                  <option value="Ambos">Ambos</option>
-              </select><br><br>
-            <label for="selecao">Histórico de treinamento:</label><br>
-               <select id="selecao" name="Histórico de treinamento">
-                <option value="Frequente">Frequente</option>
-                <option value="Não Frequente">Não Frequente</option>
-            </select><br><br>
+          <h1 class="h1 hero-title">Avaliação Inicial</h1>
 
-            <label for="selecao">Restrições Fisicas:</label><br>
-               <select id="selecao" name="Histórico de treinamento">
-                <option value="Sim">Sim</option>
-                <option value="Não">Não</option>
-            </select><br><br>
+          <form id="avaliacao-inicial" class="avaliacao-form">
+            <div class="form-group">
+            <label for="selecao">Objetivos:</label>
+            <select id="selecao" name="selecao" required>
+              <option value="Emagrecer">Emagrecer</option>
+              <option value="Ganhar massa muscular">Ganhar massa muscular</option>
+              <option value="Ambos">Ambos</option>
+            </select>
+          </div>
 
+          <div class="form-group">
+            <label for="selecao">Histórico de treinamento:</label>
+            <select id="selecao" name="Histórico de treinamento" required>
+              <option value="Frequente">Frequente</option>
+              <option value="Não Frequente">Não Frequente</option>
+            </select>
+          </div>
 
-              <button type="submit" name="Cadastrar">Cadastrar</button><br><br>
-            
-              <h2>Coleta de dados</h2>
-              
-              <label for="selecao">Nivel de condicionamento:</label><br>
-               <select id="selecao" name="Nivel de condicionamento">
-                <option value="Ruim">Ruim</option>
-                <option value="Bom">Bom</option>
-                <option value="Otimo">Otimo</option>
-            </select><br><br>
-              
-              <label for="selecao">Preferência de Treino:</label><br>
-              <select id="selecao" name="selecao">
-                  <option value="Superior">Superior</option>
-                  <option value="Inferior">Inferior</option>
-                  <option value="Aerobico">Aerobico</option>
-              </select><br><br>
-             
-        
-             
-              <label for="Disponibilidade de Tempo">Disponibilidade de Tempo:</label><br>
-              <select id="Frequencia" name="Disponibilidade de Tempo" multiple>
-                  <option value="1 dias na semana">1 dia na semana</option>
-                  <option value="2 dias na semana">2 dias na semana</option>
-                  <option value="3 dias na semana">3 dias na semana</option>
-                  <option value="4 dias na semana">4 dias na semana</option>
-                  <option value="5 dias na semana">5 dias na semana</option>
-                  <option value="6 dias na semana">6 dias na semana</option>
-              </select><br><br>
-              
-        
-              <button type="submit" name="Cadastrar">Cadastrar</button><br><br>
-              <button type="submit" name="Visualizar Perfil">Visualizar Perfil</button><br><br>
+            <div class="form-group">
+            <label for="selecao">Nivel de condicionamento:</label>
+            <select id="selecao" name="Nivel de condicionamento" required>
+              <option value="Ruim">Ruim</option>
+              <option value="Bom">Bom</option>
+              <option value="Otimo">Otimo</option>
+            </select>
+          </div>
 
+          <div class="form-group">
+            <label for="selecao">Preferência de Treino:</label>
+            <select id="selecao" name="selecao" required>
+              <option value="Superior">Superior</option>
+              <option value="Inferior">Inferior</option>
+              <option value="Aerobico">Aerobico</option>
+            </select>
+          </div>
+
+            <div class="form-group">
+            <label for="Disponibilidade de Tempo">Disponibilidade de Tempo:</label>
+            <select id="Frequencia" name="Disponibilidade de Tempo" required>
+              <option value="1 dias na semana">1 dia na semana</option>
+              <option value="2 dias na semana">2 dias na semana</option>
+              <option value="3 dias na semana">3 dias na semana</option>
+              <option value="4 dias na semana">4 dias na semana</option>
+              <option value="5 dias na semana">5 dias na semana</option>
+            </select>
+          </div>
+
+            <button type="submit" name="Cadastrar">Cadastrar</button><br>
+         
 
           </form>
+
+
         </div>
-      
-      </div>
-    </section>
-  </article>
-</main>
+      </section>
+
+    </article>
+  </main>
+
+
   <!-- 
     - FOOTER
   -->
@@ -236,7 +234,9 @@
             </li>
 
             <li>
-              <a href="#" class="footer-link">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat autem ex ea dolores deleniti! Nisi ex soluta veniam? Tempore, expedita natus! Temporibus vel, atque modi quisquam nulla asperiores aspernatur sequi.</a>
+              <a href="#" class="footer-link">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat autem ex
+                ea dolores deleniti! Nisi ex soluta veniam? Tempore, expedita natus! Temporibus vel, atque modi quisquam
+                nulla asperiores aspernatur sequi.</a>
             </li>
 
           </ul>
@@ -248,7 +248,9 @@
             </li>
 
             <li>
-              <a href="#" class="footer-link">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat autem ex ea dolores deleniti! Nisi ex soluta veniam? Tempore, expedita natus! Temporibus vel, atque modi quisquam nulla asperiores aspernatur sequi.</a>
+              <a href="#" class="footer-link">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat autem ex
+                ea dolores deleniti! Nisi ex soluta veniam? Tempore, expedita natus! Temporibus vel, atque modi quisquam
+                nulla asperiores aspernatur sequi.</a>
             </li>
 
           </ul>
@@ -309,6 +311,17 @@
   -->
   <script src="./assets/js/script.js"></script>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.getElementById("avaliacao-inicial");
+  
+      form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        window.location.href = "CriacaoPlanoDeTreino.html";
+      });
+    });
+  </script>
+
   <!-- 
     - LINKS DOS ICONES
   -->
@@ -316,5 +329,5 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-</html>
 
+</html>

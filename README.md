@@ -8,8 +8,7 @@
 
 * Davi Andrade Rocha Melo de Oliveira
 * João Vitor Pedersoli Rajão 
-* João Vítor Barrel Alves Dutra
-* Pedro Arthur Oliveira Silva
+
 
 
 ## Professor

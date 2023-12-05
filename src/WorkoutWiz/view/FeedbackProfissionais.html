@@ -153,13 +153,15 @@
         clientId: 2,
         name: nome,
         publico: email,
-        text: message
+        text: message,
+        mediaSatisfacao: 5 
       }
       console.log(data1)
 
       axios.post('http://localhost:8080/feedback', data1)
           .then(function (response) {
               console.log(response.data);
+              
           })
           .catch(function (error) {
               console.error(error);

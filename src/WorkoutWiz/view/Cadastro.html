@@ -80,6 +80,7 @@
       axios.post('http://localhost:8080/signup', data)
           .then(function (response) {
               console.log(response.data);
+              window.location.href = 'Login.html';
           })
           .catch(function (error) {
               console.error(error);

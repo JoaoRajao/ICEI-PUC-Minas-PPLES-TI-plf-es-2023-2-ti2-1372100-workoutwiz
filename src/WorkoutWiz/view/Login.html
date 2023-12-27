@@ -8,7 +8,7 @@
   <title>Workoutwiz</title>
 
   <!-- FAVICON -->
-  <link rel="shortcut icon" href=".assets/images/favicon.png">
+  <link rel="shortcut icon" href="./assets/images/favicon.png">
 
   <!-- CSS LINK -->
   <link rel="stylesheet" href="./assets/css/Login.css">
@@ -18,24 +18,29 @@
   <div class="wrapper">
     <div class="form-container sign-in">
       <!-- Login Form -->
-      <form action="#">
+      <form id="login-form">
         <h2>Login</h2>
         <div class="form-group">
+          <input id="name" type="text" required>
+          <label for="">Nome</label>
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="form-group">
           <input id="email" type="email" required>
-          <label for="">email</label>
+          <label for="">Email</label>
           <i class="fas fa-at"></i>
         </div>
         <div class="form-group">
           <input id="password" type="password" required>
           <i class="fas fa-lock"></i>
-          <label for="">senha</label>
+          <label for="">Senha</label>
         </div>
         <!-- <div class="forgot-pass">
           <a href="#">esqueceu a senha?</a>
         </div> -->
         <button id="btn-login" type="submit" class="btn">Login</button>
         <div class="link">
-          <p>Não possui uma conta?<a href="Cadastro.html" class="signup-link"> Cadastro</a></p> 
+          <p>Não possui uma conta?<a href="Cadastro.html" class="signup-link"> Cadastro</a></p>
         </div>
       </form>
     </div>
@@ -43,31 +48,39 @@
 
   <!-- Font Awesome Script -->
   <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
   <script>
-    let wrapper = document.querySelector('.wrapper'),
-      signUpLink = document.querySelector('.link .signup-link'),
-      signInLink = document.querySelector('.link .signin-link');
+    document.addEventListener('DOMContentLoaded', function () {
+      let loginForm = document.getElementById('login-form');
 
-    signUpLink.addEventListener('click', () => {
-      wrapper.classList.add('animated-signin');
-      wrapper.classList.remove('animated-signup');
-    });
+      loginForm.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    signInLink.addEventListener('click', () => {
-      wrapper.classList.add('animated-signup');
-      wrapper.classList.remove('animated-signin');
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+
+        let data = {
+          name: name,
+          email: email,
+          password: password
+        };
+
+        axios.post('http://localhost:8080/signup', data)
+          .then(function (response) {
+            console.log(response.data);
+            window.location.href = 'Home.html';
+          })
+          .catch(function (error) {
+            console.error(error);
+          });
+      });
     });
   </script>
+
+
 </body>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    let loginButton = document.getElementById('btn-login');
-
-    loginButton.addEventListener('click', function () {
-      window.location.href = 'Home.html';
-    });
-  });
-</script>
 
 </html>

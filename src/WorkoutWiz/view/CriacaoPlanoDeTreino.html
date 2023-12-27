@@ -89,105 +89,117 @@
     <!-- Seção "Criação do Plano de Treino" -->
     <section class="workout-creation">
       <div class="container">
+
         <form class="workout-form">
           <h2 class="h2">Criação do Plano de Treino</h2>
           <div class="form-group">
-            <label for="frequency">Frequência de Treino (1-7 dias):</label>
-            <input type="number" id="frequency" name="frequency" min="1" max="7" required>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" min="1" max="7" required>
           </div>
+
           <div class="form-group">
-            <label for="modality">Escolha a Modalidade:</label>
-            <select id="modality" name="modality">
-              <option value="standard">Usar Modalidade Padrão</option>
-              <option value="custom">Modalidade Personalizada</option>
+            <label for="frequencia">Frequência de Treino (1-7 dias):</label>
+            <input type="number" id="frequencia" name="frequencia" min="1" max="7" required>
+          </div>
+
+          <div class="form-group">
+            <label for="modalidade">Escolha a Modalidade:</label>
+            <select id="modalidade" name="modalidade">
+              <option value="standard">Musculação</option>
+              <option value="custom">Resistência</option>
+              <option value="custom">Perda Peso</option>
             </select>
-            <textarea id="customModality" name="customModality" placeholder="Digite a modalidade personalizada"></textarea>
           </div>
         
-        <h2 class="h2">Incorporação de Exercícios</h2>
-        <form class="exercise-form">
           <div class="form-group">
-            <label for="weight">Peso Atual (kg):</label>
+            <label for="weight">Ganho de Massa (kg):</label>
             <input type="number" id="weight" name="weight" step="0.1" required>
           </div>
+
           <div class="form-group">
-            <label for="height">Altura (cm):</label>
-            <input type="number" id="height" name="height" step="1" required>
-          </div>
-          <div class="form-group">
-            <label for="activity-level">Nível de Atividade:</label>
-            <select id="activity-level" name="activity-level">
-              <option value="moderado">Moderado</option>
-              <option value="médio">Médio</option>
-              <option value="intenso">Intenso</option>
+            <label for="controle-peso">Controle de Peso</label>
+            <select id="controle-peso" name="controle-peso">
+              <option value="Sim">Sim</option>
+              <option value="Não">Não</option>
             </select>
           </div>
+
           <div class="form-group">
-            <label for="muscle-progress">Ganho de massa muscular desejada (kg):</label>
-            <input type="number" id="muscle-progress" name="muscle-progress" step="0.1" required>
+            <label for="aumento-resistencia">Aumento da Resistência</label>
+            <select id="aumento-resistencia" name="aumento-resistencia">
+              <option value="Sim">Sim</option>
+              <option value="Não">Não</option>
+            </select>
           </div>
+
           <div class="form-group">
-            <label for="weight-progress">Meta de Peso (kg):</label>
-            <input type="number" id="weight-progress" name="weight-progress" step="0.1" required>
+            <label for="progressoes-carga">Progressões Carga</label>
+            <select id="progressoes-carga" name="progressoes-carga">
+              <option value="Gradual">Gradual</option>
+              <option value="Não Gradual">Não Gradual</option>
+            </select>
           </div>
+
           <div class="form-group">
-            <label for="resistance-increase">Nível de Resistência (0-5):</label>
-            <input type="number" id="resistance-increase" name="resistance-increase" min="0" max="5" required>
-            <textarea id="resistance-feedback" name="resistance-feedback" placeholder="A partir do feedback do aumento da resistência, é possível determinar o nível de complexidade e intensidade do plano de treino"></textarea>
+            <label for="progressoes-dificuldade">Progressões Dificuldade</label>
+            <select id="progressoes-dificuldade" name="progressoes-dificuldade">
+              <option value="Facil">Fácil</option>
+              <option value="Moderada">Moderada</option>
+              <option value="Dificil">Difícil</option>
+            </select>
           </div>
-          <div class="form-group">
-            <label for="weight-progress">Meta de Peso (kg):</label>
-            <input type="number" id="weight-progress" name="weight-progress" step="0.1" required>
-          </div>
+
           <button type="button" class="save-progress-button">Salvar Dados</button>
-        </form>
+       
       
     </section>
   
-    <!-- Seção "Estabelecer Progressões" -->
-    <!-- Dentro da seção "Estabelecer Progressões" -->
-<section class="progression-setup">
-    <h2 class="h2">Progressão de Carga</h2>
-    <form class="form">
-      <!-- Tabela de Progressão de Cargas -->
-      <table class="progression-table">
-        <thead>
-          <tr>
-            <th>Exercício</th>
-            <th>Carga Utilizada (kg)</th>
-            <th>Data</th>
-            <th>Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Linhas da tabela (dados do usuário) -->
-        </tbody>
-      </table>
-  
-      <!-- Formulário para adicionar nova linha à tabela -->
-      <div class="form-group">
-        <label for="exercise">Exercício:</label>
-        <input type="text" id="exercise" name="exercise">
-      </div>
-      <div class="form-group">
-        <label for="load">Carga Utilizada (kg):</label>
-        <input type="number" id="load" name="load" step="0.1">
-      </div>
-      <div class="form-group">
-        <label for="date">Data:</label>
-        <input type="date" id="date" name="date">
-      </div>
-      <button type="button" id="add-row-button">Adicionar</button>
-    </form>
-  </section>
-  
+   
   </main>
-  
-  
-  
-  
 
-
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector(".workout-form");
+  
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+  
+        let data = document.getElementById("data").value;
+        let frequencia = parseInt(document.getElementById("frequencia").value);
+        let modalidade = document.getElementById("modalidade").value;
+        let ganhoDeMassaMuscular = document.getElementById("weight").value;
+        let controleDePeso = document.getElementById("controle-peso").value;
+        let aumentoDaResistencia = document.getElementById("aumento-resistencia").value;
+        let progressoesDeCarga = document.getElementById("progressoes-carga").value;
+        let progressoesDeDificuldade = document.getElementById("progressoes-dificuldade").value;
+        let treinadorId = 1; 
+  
+        let requestData = {
+          clientId: "1", 
+          data: data,
+          frequencia: frequencia,
+          modalidade: modalidade,
+          ganhoDeMassaMuscular: ganhoDeMassaMuscular,
+          controleDePeso: controleDePeso,
+          aumentoDaResistencia: aumentoDaResistencia,
+          progressoesDeCarga: progressoesDeCarga,
+          progressoesDeDificuldade: progressoesDeDificuldade,
+          treinadorId: treinadorId
+        };
+  
+        axios.post('http://localhost:8080/planodetreino', requestData)
+          .then(function (response) {
+            console.log(response.data);
+            window.location.href = 'AcompanhamentoProgresso1.html';
+          })
+          .catch(function (error) {
+            console.error(error);
+          });
+      });
+    });
+  </script>
+  
+  
   <!-- 
     - FOOTER
   -->
@@ -347,116 +359,7 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script>
-    // JavaScript para adicionar linhas à tabela
-    document.addEventListener('DOMContentLoaded', function () {
-  const addRowButton = document.getElementById('add-row-button');
-  const tableBody = document.querySelector('.progression-table tbody');
-
-  addRowButton.addEventListener('click', function () {
-    const exerciseInput = document.getElementById('exercise');
-    const loadInput = document.getElementById('load');
-    const dateInput = document.getElementById('date');
-
-    const exercise = exerciseInput.value;
-    const load = loadInput.value;
-    const date = dateInput.value;
-
-    if (exercise && load && date) {
-      const newRow = document.createElement('tr');
-      newRow.innerHTML = `
-        <td style="font-family: var(--ff-poppins); font-size: var(--fs-4); font-weight: var(--fw-500); color: var(--rich-black-fogra-29);">${exercise}</td>
-        <td style="font-family: var(--ff-poppins); font-size: var(--fs-4); font-weight: var(--fw-500); color: var(--rich-black-fogra-29);">${load} kg</td>
-        <td style="font-family: var(--ff-poppins); font-size: var(--fs-4); font-weight: var(--fw-500); color: var(--rich-black-fogra-29);">${date}</td>
-        <td><button class="delete-row-button">Excluir</button></td>
-      `;
-
-      // Adiciona a nova linha à tabela
-      tableBody.appendChild(newRow);
-
-      // Limpa os campos de entrada
-      exerciseInput.value = '';
-      loadInput.value = '';
-      dateInput.value = '';
-
-      // Adiciona funcionalidade para excluir a linha
-      const deleteRowButton = newRow.querySelector('.delete-row-button');
-      deleteRowButton.addEventListener('click', function () {
-        tableBody.removeChild(newRow);
-      });
-    }
-  });
-});
-
-
-    const select = document.getElementById("exercicios");
-    
-    select.addEventListener("mousedown", (e) => {
-      e.preventDefault();
-      
-      const option = e.target;
-      
-      if (option.tagName === "OPTION") {
-        option.selected = !option.selected;
-      }
-    });
-  </script>
-  <script>
-
-    // Selecione o campo "Escolher Modalidade"
-const modalitySelect = document.getElementById("modality");
-const customModalityTextarea = document.getElementById("customModality");
-
-// Adicione um ouvinte de evento para alternar a exibição da área de texto personalizada
-modalitySelect.addEventListener("change", function () {
-  if (modalitySelect.value === "custom") {
-    customModalityTextarea.style.display = "block";
-  } else {
-    customModalityTextarea.style.display = "none";
-  }
-});
-
-// Selecione o botão "Gerar Plano de Treino"
-const generatePlanButton = document.querySelector(".generate-plan-button");
-
-// Adicione um ouvinte de evento para lidar com a geração do plano de treino
-generatePlanButton.addEventListener("click", function () {
-  // Adicione a lógica para gerar o plano de treino com base nos valores do formulário
-  // Você pode usar AJAX para integrar o banco de dados nesta função
-  // Exemplo: fetch('URL_DO_BACKEND', { method: 'POST', body: JSON.stringify(formValues) })
-  // Em seguida, manipule a resposta do servidor aqui
-});
-
-    
-    document.querySelector('.generate-plan-button').addEventListener('click', function () {
-  // Lógica para gerar o plano de treino com base nas entradas do usuário
-  // Implemente a lógica aqui ou adicione um manipulador de eventos personalizado
-  // para realizar essa tarefa.
-  // Por exemplo, você pode usar os valores dos campos de entrada para gerar o plano.
-});
-
-    const selectPreferencias = document.getElementById("preferencias");
   
-    selectPreferencias.addEventListener("mousedown", (e) => {
-      e.preventDefault();
-  
-      const option = e.target;
-  
-      if (option.tagName === "OPTION") {
-        option.selected = !option.selected;
-      }
-    });
-  </script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const saveProgressButton = document.querySelector(".save-progress-button");
-
-    saveProgressButton.addEventListener("click", function () {
-      window.location.href = "AcompanhamentoProgresso1.html";
-    });
-  });
-</script>
 
 </body>
 </html>

@@ -91,75 +91,27 @@
       <section class="hero">
         <div class="container">
 
-          <h1 class="h1 hero-title">Avaliação Inicial</h1>
+          <h1 class="h1 hero-title">Exercícios</h1>
 
           <form id="avaliacao-inicial" class="avaliacao-form">
 
             <div class="form-group">
-              <label for="">Idade</label>
-              <input id="idade" type="number" required>
+              <label for="">Nome do Exercício</label>
+              <input id="nome-exercicio" type="text" required>
               <i class="fas fa-user"></i>
             </div>
 
             <div class="form-group">
-              <label for="selecao">Sexo</label>
-              <select id="selecao" name="selecao" required>
-                <option value="Masculino">Masculino</option>
-                <option value="Feminino">Feminino</option>
-              </select>
-            </div>
+                <label for="">Número de Repetições</label>
+                <input id="numero-repeticoes" type="number" required>
+                <i class="fas fa-user"></i>
+              </div>
 
-            <div class="form-group">
-            <label for="selecao">Objetivos:</label>
-            <select id="selecao" name="selecao" required>
-              <option value="Emagrecer">Emagrecer</option>
-              <option value="Ganhar massa muscular">Ganhar massa muscular</option>
-              <option value="Ambos">Ambos</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="selecao">Histórico de treinamento:</label>
-            <select id="selecao" name="Histórico de treinamento" required>
-              <option value="Frequente">Frequente</option>
-              <option value="Não Frequente">Não Frequente</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="">Restrições Físicas</label>
-            <input id="restricoes-fisicas" type="text" required>
-            <i class="fas fa-user"></i>
-          </div>
-
-            <div class="form-group">
-            <label for="selecao">Nivel de condicionamento:</label>
-            <select id="selecao" name="Nivel de condicionamento" required>
-              <option value="Ruim">Ruim</option>
-              <option value="Bom">Bom</option>
-              <option value="Otimo">Otimo</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="selecao">Preferência de Treino:</label>
-            <select id="selecao" name="selecao" required>
-              <option value="Superior">Superior</option>
-              <option value="Inferior">Inferior</option>
-              <option value="Aerobico">Aerobico</option>
-            </select>
-          </div>
-
-            <div class="form-group">
-            <label for="Disponibilidade de Tempo">Disponibilidade de Dias na Semana:</label>
-            <select id="Frequencia" name="Disponibilidade de Tempo" required>
-              <option value="1 dias na semana">1</option>
-              <option value="2 dias na semana">2</option>
-              <option value="3 dias na semana">3</option>
-              <option value="4 dias na semana">4</option>
-              <option value="5 dias na semana">5</option>
-            </select>
-          </div>
+              <div class="form-group">
+                <label for="">Peso</label>
+                <input id="peso" type="number" required>
+                <i class="fas fa-user"></i>
+              </div>
 
             <button type="submit" name="Cadastrar">Cadastrar</button><br>
          
@@ -335,36 +287,24 @@
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const form = document.getElementById("avaliacao-inicial");
-
+  
       form.addEventListener("submit", function(event) {
         event.preventDefault();
-
-        let idade = parseInt(document.getElementById("idade").value);
-        let sexo = String(document.getElementById("selecao").value);
-        let objetivos = String(document.getElementById("selecao-objetivos").value);
-        let historicoTreinamento = String(document.getElementById("selecao-historico").value);
-        let restricoesFisicas = String(document.getElementById("restricoes-fisicas").value);
-        let nivelCondicionamento = String(document.getElementById("selecao-nivel").value);
-        let preferenciaTreino = String(document.getElementById("selecao-preferencia").value);
-        let disponibilidadeTempo = parseInt(document.getElementById("Frequencia").value);
-
+  
+        let nomeDoExercicio = String(document.getElementById("nome-exercicio").value);
+        let numeroDeRepeticoes = parseInt(document.getElementById("numero-repeticoes").value);
+        let peso = parseInt(document.getElementById("peso").value);
+  
         let data = {
-          clienteId: "1",
-          treinadorId: "1",
-          idade: idade,
-          sexo: sexo,
-          objetivos: objetivos,
-          historicoTreinamento: historicoTreinamento,
-          restricoesFisicas: restricoesFisicas,
-          nivelCondicionamento: nivelCondicionamento,
-          preferenciaTreino: preferenciaTreino,
-          disponibilidadeTempo: disponibilidadeTempo
+          nomeDoExercicio: nomeDoExercicio,
+          numeroDeRepeticoes: numeroDeRepeticoes,
+          peso: peso
         };
-
-        axios.post('http://localhost:8080/avaliacaoInicial', data)
+  
+        axios.post('http://localhost:8080/exercicios', data)
           .then(function (response) {
             console.log(response.data);
-            window.location.href = 'CriacaoPlanoDeTreino.html';
+            window.location.href = 'Home.html'; 
           })
           .catch(function (error) {
             console.error(error);
@@ -372,7 +312,6 @@
       });
     });
   </script>
-
   <!-- 
     - LINKS DOS ICONES
   -->

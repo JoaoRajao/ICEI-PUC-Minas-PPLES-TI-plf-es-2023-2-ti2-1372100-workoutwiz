@@ -1,18 +1,23 @@
 package com.workoutwiz.api.models;
 
+
 public class AvaliacaoInicialModel {
     private final int clienteId;
     private final int treinadorId;
+    private final int idade;
+    private final String sexo;
     private final String objetivos;
     private final String historicoTreinamento;
     private final String restricoesFisicas;
     private final String nivelCondicionamento;
     private final String preferenciaTreino;
-    private final String disponibilidadeTempo;
+    private final int disponibilidadeTempo;
 
-    public AvaliacaoInicialModel(int clienteId, int treinadorId, String objetivos, String historicoTreinamento, String restricoesFisicas, String nivelCondicionamento, String preferenciaTreino, String disponibilidadeTempo) {
+    public AvaliacaoInicialModel(int clienteId, int treinadorId, int idade, String sexo, String objetivos, String historicoTreinamento, String restricoesFisicas, String nivelCondicionamento, String preferenciaTreino, int disponibilidadeTempo) {
         this.clienteId = clienteId;
         this.treinadorId = treinadorId;
+        this.idade = idade;
+        this.sexo = sexo;
         this.objetivos = objetivos;
         this.historicoTreinamento = historicoTreinamento;
         this.restricoesFisicas = restricoesFisicas;
@@ -21,9 +26,14 @@ public class AvaliacaoInicialModel {
         this.disponibilidadeTempo = disponibilidadeTempo;
     }
 
+
     public int getClienteId() { return clienteId; }
 
     public int getTreinadorId() { return treinadorId; }
+
+    public int getIdade() { return idade; }
+
+    public String getSexo() { return sexo; }
 
     public String getObjetivos() { return objetivos; }
 
@@ -35,20 +45,9 @@ public class AvaliacaoInicialModel {
 
     public String getPreferenciaTreino() { return preferenciaTreino; }
 
-    public String getDisponibilidadeTempo() { return disponibilidadeTempo; }
+    public int getDisponibilidadeTempo() { return disponibilidadeTempo; }
 
-    @Override
-    public String toString() {
-        return "AvaliacaoInicialModel{" +
-                "clienteId=" + clienteId +
-                ", treinadorId=" + treinadorId +
-                ", objetivos='" + objetivos + '\'' +
-                ", historicoTreinamento='" + historicoTreinamento + '\'' +
-                ", restricoesFisicas='" + restricoesFisicas + '\'' +
-                ", nivelCondicionamento='" + nivelCondicionamento + '\'' +
-                ", preferenciaTreino='" + preferenciaTreino + '\'' +
-                ", disponibilidadeTempo='" + disponibilidadeTempo + '\'' +
-                '}';
-    }
+
+
 
 }

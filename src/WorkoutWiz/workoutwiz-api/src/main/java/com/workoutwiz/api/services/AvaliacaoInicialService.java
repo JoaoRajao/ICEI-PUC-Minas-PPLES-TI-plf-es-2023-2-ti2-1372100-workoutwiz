@@ -27,16 +27,18 @@ public class AvaliacaoInicialService {
                 // Log de cada campo
                 System.out.println("Registrando Avaliação Inicial: " + avaliacaoInicial);
 
-                String sql = "INSERT INTO AvaliacaoInicial (ClienteID, TreinadorID, Objetivos, HistoricoDeTreinamento, RestricoesFisicas, NivelDeCondicionamento, PreferenciasDeTreino, DisponibilidadeDeTempo) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+                String sql = "INSERT INTO AvaliacaoInicial (ClienteID, TreinadorID, Idade, Sexo, Objetivos, HistoricoDeTreinamento, RestricoesFisicas, NivelDeCondicionamento, PreferenciasDeTreino, DisponibilidadeDeTempo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
                 try (PreparedStatement stmt = connection.prepareStatement(sql)) {
                     stmt.setInt(1, avaliacaoInicial.getClienteId());
                     stmt.setInt(2, avaliacaoInicial.getTreinadorId());
-                    stmt.setString(3, avaliacaoInicial.getObjetivos());
-                    stmt.setString(4, avaliacaoInicial.getHistoricoTreinamento());
-                    stmt.setString(5, avaliacaoInicial.getRestricoesFisicas());
-                    stmt.setString(6, avaliacaoInicial.getNivelCondicionamento());
-                    stmt.setString(7, avaliacaoInicial.getPreferenciaTreino());
-                    stmt.setString(8, avaliacaoInicial.getDisponibilidadeTempo());
+                    stmt.setInt(3, avaliacaoInicial.getIdade());
+                    stmt.setString(4, avaliacaoInicial.getSexo());
+                    stmt.setString(5, avaliacaoInicial.getObjetivos());
+                    stmt.setString(6, avaliacaoInicial.getHistoricoTreinamento());
+                    stmt.setString(7, avaliacaoInicial.getRestricoesFisicas());
+                    stmt.setString(8, avaliacaoInicial.getNivelCondicionamento());
+                    stmt.setString(9, avaliacaoInicial.getPreferenciaTreino());
+                    stmt.setInt(10, avaliacaoInicial.getDisponibilidadeTempo());
                     stmt.executeUpdate();
                     callback.onResult(true);
                 } catch (SQLException e) {
@@ -54,7 +56,7 @@ public class AvaliacaoInicialService {
     public static void queryAvaliacaoInicial(QueryAvaliacaoInicialCallback callback) {
         DatabaseManager.execute((success, connection) -> {
             if (success) {
-                String sql = "SELECT ClienteID, TreinadorID, Objetivos, HistoricoDeTreinamento, RestricoesFisicas, NivelDeCondicionamento, PreferenciasDeTreino, DisponibilidadeDeTempo FROM AvaliacaoInicial";
+                String sql = "SELECT ClienteID, TreinadorID, Idade, Sexo, Objetivos, HistoricoDeTreinamento, RestricoesFisicas, NivelDeCondicionamento, PreferenciasDeTreino, DisponibilidadeDeTempo FROM AvaliacaoInicial";
                 try (PreparedStatement stmt = connection.prepareStatement(sql)) {
                     ResultSet rs = stmt.executeQuery();
                     List<AvaliacaoInicialModel> avaliacaoInicialList = new ArrayList<>();
@@ -62,14 +64,16 @@ public class AvaliacaoInicialService {
                     while (rs.next()) {
                         int clienteId = rs.getInt("ClienteID");
                         int treinadorId = rs.getInt("TreinadorID");
+                        int idade = rs.getInt("Idade");
+                        String sexo = rs.getString("Sexo");
                         String objetivos = rs.getString("Objetivos");
                         String historicoTreinamento = rs.getString("HistoricoDeTreinamento");
                         String restricoesFisicas = rs.getString("RestricoesFisicas");
                         String nivelCondicionamento = rs.getString("NivelDeCondicionamento");
                         String preferenciaTreino = rs.getString("PreferenciasDeTreino");
-                        String disponibilidadeTempo = rs.getString("DisponibilidadeDeTempo");
+                        int disponibilidadeTempo = rs.getInt("DisponibilidadeDeTempo");
 
-                        AvaliacaoInicialModel avaliacaoInicial = new AvaliacaoInicialModel(clienteId, treinadorId, objetivos, historicoTreinamento, restricoesFisicas, nivelCondicionamento, preferenciaTreino, disponibilidadeTempo);
+                        AvaliacaoInicialModel avaliacaoInicial = new AvaliacaoInicialModel(clienteId, treinadorId, idade, sexo, objetivos, historicoTreinamento, restricoesFisicas, nivelCondicionamento, preferenciaTreino, disponibilidadeTempo);
                         avaliacaoInicialList.add(avaliacaoInicial);
                     }
 

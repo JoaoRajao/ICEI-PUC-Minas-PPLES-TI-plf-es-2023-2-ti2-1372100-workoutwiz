@@ -36,6 +36,7 @@ public class AvaliacaoInicialRoute {
     @PostMapping("/avaliacaoInicial")
     public String postAvaliacaoInicial(@RequestBody AvaliacaoInicialModel avaliacaoInicial) {
         final String[] response = new String[1];
+        System.out.println(avaliacaoInicial.getHistoricoTreinamento());
         AvaliacaoInicialService.registerAvaliacaoInicial(avaliacaoInicial, success -> {
             if (success) {
                 response[0] = HttpResponseUtil.toJson(new AvaliacaoInicialResponse(false, "Avaliacao Inicial registrada com sucesso"));

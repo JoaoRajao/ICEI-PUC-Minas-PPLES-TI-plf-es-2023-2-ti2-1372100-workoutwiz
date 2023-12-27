@@ -18,8 +18,8 @@ public class PlanejamentoTreinoService {
                 String sql = "INSERT INTO PlanejamentoDeTreinos (treinoID, Tempo, Data) VALUES (?, ?, ?)";
                 try (PreparedStatement stmt = connection.prepareStatement(sql)) {
                     stmt.setString(1, planejamentoTreino.getTreinoId());
-                    stmt.setString(2, planejamentoTreino.getData());
-                    stmt.setString(3, planejamentoTreino.getTempo());
+                    stmt.setString(2, planejamentoTreino.getTempo());
+                    stmt.setString(3, planejamentoTreino.getData());
                     stmt.executeUpdate();
                     callback.onResult(true); // Callback com sucesso
                 } catch (SQLException e) {
